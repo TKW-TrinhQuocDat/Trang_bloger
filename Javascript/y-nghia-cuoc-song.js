@@ -37,6 +37,61 @@ function ReadFile(){
         Changehtml.innerHTML = html1;
         console.log(post1)
     })
-   
 }
 
+function start(){
+    readFileTags(function(post){
+        randerTags(post);
+    })
+}
+start();
+
+
+function readFileTags(callback){
+    var posturl = '../Json_Life/life.json';
+    fetch(posturl)
+        .then (function(response){
+            return response.json();
+        })
+        .then(callback)
+}
+function randerTags(post){
+    var listTags = document.querySelector('.body__tags');
+    var htmls = ``;
+    let n = post.content.length;
+    let t = 0;
+    let dem = 0;
+    for (let i=0; i < n; i++){
+        if(t >= 3) {
+            t = 0;
+            if(t===0 ) dem++;
+        }
+
+        htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
+        <div class="tag__image">
+            <a href="#">
+                <img src="../img/Life_${i+1}.jpg" alt="Life">
+            </a>
+        </div>
+        <div class="content">
+            <div class="tag__title">
+                <h1><a href="#">${post.content[i].title}</a></h1>
+            </div>
+            <div class="tag__discription">
+                <span>${post.content[i].discription}</span>
+            </div>
+            <div class="tag__contact">
+                <div class="tag__contact-img">
+                    <a href=""><img src="../img/avatar.jpg" alt="avatar"></a>
+                </div>
+                <div> <p> -- 3 min read </p></div>
+            </div>
+        </div>
+    </div>`;
+    // var tag1 = document.querySelector('.tag');
+    //     if( i < 3) {
+    //         tag1.add('row1');
+    //     }else tag1.add('row2');
+    }
+    listTags.innerHTML = htmls;
+}
