@@ -1,9 +1,10 @@
-var postApi = '../Json_Life/Y_nghia_cuoc_song.json';
-function ReadFile(){
+
+function ReadFile(postApi){
     fetch(postApi)
     .then(function(response){
         return response.json();
     })
+    
     .then (function (post1){
         var html = '';
         var Changehtml = document.querySelector('.post__header');
