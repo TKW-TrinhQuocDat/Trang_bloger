@@ -71,3 +71,8 @@ div.socal_network ul > li{
     color: var(--mean-color--);
 
 }
+ul > li{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--mean-color--);
+}

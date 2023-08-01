@@ -45,7 +45,10 @@ function start(){
         randerTags(post);
     })
 }
-start();
+
+window.onload = function(){
+    start();
+}
 
 
 function readFileTags(callback){
@@ -67,16 +70,16 @@ function randerTags(post){
             t = 0;
             if(t===0 ) dem++;
         }
-
+        console.log(post);
         htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
         <div class="tag__image">
-            <a href="#">
+            <a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML/HTML_life/${post.content[i].link}">
                 <img src="../img/Life_${i+1}.jpg" alt="Life">
             </a>
         </div>
         <div class="content">
             <div class="tag__title">
-                <h1><a href="#">${post.content[i].title}</a></h1>
+                <h1><a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML/HTML_life/${post.content[i].link}">${post.content[i].title}</a></h1>
             </div>
             <div class="tag__discription">
                 <span>${post.content[i].discription}</span>
@@ -89,10 +92,7 @@ function randerTags(post){
             </div>
         </div>
     </div>`;
-    // var tag1 = document.querySelector('.tag');
-    //     if( i < 3) {
-    //         tag1.add('row1');
-    //     }else tag1.add('row2');
     }
-    listTags.innerHTML = htmls;
+    if(htmls!==null) listTags.innerHTML = htmls;
 }
+
