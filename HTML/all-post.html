@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang blog về Công nghệ </title>
+    <link rel="stylesheet" href="../CSS/base.css"/>
+    <link rel="stylesheet" href="../CSS/main.css"/>
+    <link rel="stylesheet" href="../CSS/all-posts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="../Javascript/all-posts.js"></script>
+</head>
+<body>
+    <!-- header menu -->
+    <div class="app">
+        <header class="header">
+            <div class="girt">
+                <div class="alin-item d-flex">
+                    <div class="header__logo">
+                        <a href="#"><img class="header__logo-img" src="https://upload.wikimedia.org/wikipedia/vi/0/02/DotBlog_domain_logo.png" alt="Logo Blog"/></a>
+                    </div>
+                    <div class="header__navbar-menu d-flex">
+                        <nav class="header__navbar  ">
+                            <ul class="header__navbar--list d-flex">
+                                <li class="header__navbar--list-item"><a href="../HTML/index.html">Home</a></li>
+                                <li class="header__navbar--list-item"><a href="./all-posts.html">All Posts</a></li>
+                                <li class="header__navbar--list-item"><a href="../HTML/categories.html">Categories</a></li>
+                                <li class="header__navbar--list-item"><a href="#">About</a></li>
+                                <li class="header__navbar--list-item"><a href="#">contact</a></li>
+                                <li class="dot ">
+                                    <span class="list-item">. . .</span>
+                                    <div class="list-item--menu">
+                                        <ul class="list-item-app">
+                                            <li class="list-item-app-add"><a href="#">No code Việt Nam</a></li>
+                                            <li class="list-item-app-add"><a href="#">MVP</a></li>
+                                            <li class="list-item-app-add"><a href="#">Buil Product</a></li>
+                                            <li class="list-item-app-add"><a href="#">blockchain</a></li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__end d-flex">
+                        <div class="header__end-seach">
+                            <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <div class="header__end--sign-in">
+                            <div><a href="#">Sign In</a></div></div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+    </div>
+    <!-- Phần Body -->
+    <div class="main-app">
+      <div class="body__container">
+        <div class="main-col">
+          <div class="main-app-header">
+            <h1 class="main-app-header__title">All Posts</h1>
+            <div class="main-app-header__cript">
+              Browse the complete archive of 100 posts.
+            </div>
+          </div>
+
+          <!-- So bai post cua nam 2023 -->
+          <div class="text-year">2023 <i onclick="onClickYear()" class="fa-solid fa-caret-down"></i></div>
+          <div id="posts_2023">
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2023</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+            <i onclick="onClick()" class="fa-solid fa-caret-down"></i>
+          </article>
+
+          <div id="ext" class="extension d-flex">
+            <div class="extension-img">
+              <a href="#"><img src="../img/Life.jpg" alt="Life" /></a>
+            </div>
+            <div class="extension-desc d-flex">
+              <a href="#">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, similique fuga quasi reiciendis perferendis quia
+                aliquid veniam dolore laboriosam distinctio? Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Quaerat, similique fuga
+                quasi reiciendis perferendis quia aliquid veniam dolore
+                laboriosam distinctio?</p>
+              </a>
+              <div class="extension-emoji">
+                <ul class="d-flex">
+                  <li><i onclick="like()" class="fa-solid fa-heart"></i><span id="like-cnt"  style="padding-left: 5px">0</span></li>
+                  <li><i class="fa-solid fa-comment"></i></li>
+                  <li><i class="fa-solid fa-share"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2023</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2023</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2023</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+        </div>
+          <!-- So bai post cua nam 2022 -->
+          <div class="text-year">2022</div>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2022</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2022</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2022</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2022</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+
+          <!-- So bai post cua nam 2021 -->
+          <div class="text-year">2021</div>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2021</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2021</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2021</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+          <article class="post d-flex">
+            <div class="post__time-border">30 Jul 2021</div>
+            <h2 class="post__title">
+              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
+            </h2>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Phần Footer -->
+    <footer class="footer-stite">
+        <div class="footer__width-area"></div>
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__link">
+                    <aside class="footer__aside">
+                        <h2 class="footer__aside-title">Quick link</h2>
+                        <div class="footer__width-content">
+                            <div class="footer__nav-wrap">
+                                <ul class="footer__nav">
+                                    <li class="footer__all-post"><a href="#">All Posts</a></li>
+                                    <li class="footer__tags--create"><a href="#">Categories</a></li>
+                                    <li class="footer__about"><a href="#">About</a></li>
+                                    <li class="footer__no-code-vn"><a href="#">No code Việt Nam</a></li>
+                                    <li class="footer__ket-noi"><a href="#">contact</a></li>
+                                    <li class="footer__account"><a href="#">Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="footer__tags">
+                    <aside class="footer__aside widget">
+                        <h2 class="footer__aside-title margin-left">Tags</h2>
+                        <div class="widget__content">
+                            <ul>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Build the Product</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Life</a></li>
+                                <li><a href="#">Tiếng anh</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="footer__connect">
+                    <aside class="footer__aside widget">
+                        <h2 class="footer__aside-title margin-left">Liên kết</h2>
+                        <div class="widget__content">
+                            <ul>
+                                <li><a href="https://www.nocodevietnam.com/">nocodevietnam.com</a></li>
+                                <li><a href="https://toidicodedao.com/">toidicodedao.com</a></li>
+                                <li><a href="https://laptrinhcuocsong.com/">laptrinhcuocsong.com</a></li>
+                                <li><a href="https://wordpress.com">Wordpress</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__end">
+            <div class="footer__end-top">
+                <div class="footer__end-address">
+                    <p><a href="#">BLOG.COM  TỰ DO ĐỌC HIỂU</a> © 2023. All rights reserved.</p>
+                </div>
+                <div class="footer__end-connet">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100027817099772"><i class="footer__end-facebook fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/trinhdat041004/"><i class="footer__end-instagram fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="footer__end-twitter fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@duonghuuthanh"><i class="footer__end-youtube fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer__end-bottom"></div>
+        </div>
+    </footer>
+    
+</body>
+</html>

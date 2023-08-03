@@ -1,0 +1,151 @@
+ul li{
+    list-style: none;
+}
+
+a {
+    color: var(--text-color--);
+    text-decoration: none;
+}
+
+.main-app {
+    overflow: hidden;
+    padding: 80px 0;
+    color: var(--text-color--);
+    background-color: var(--body--);
+}
+
+.main-col{
+    width: 70%;
+    margin: auto;
+}
+
+.main-app-header {
+    text-align: center;
+}
+
+.main-app-header__title{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.main-app-header__cript {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.text-year {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#posts_2023 {
+    display: flex;
+    flex-direction: column;
+}
+
+#posts_2022 {
+    display: flex;
+    flex-direction: column;
+}
+
+#posts_2021 {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    padding: 1.5em 1em;
+    align-items: center;
+    border-bottom: 1px solid var(--body--);
+    background-color: var(--header-menu--);
+    transition: .3s;
+    position: relative;
+}
+
+.post:hover{
+    background-color: var(--body--);
+}
+
+.post__time-border {
+    display: block;
+    padding: 8px 13px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: var(--body--);
+    color: var(--text-color--);
+    font-size: 1rem;
+}
+
+.post__link {
+    text-decoration: none;
+    color: var(--text-color--);
+    font-size: 1.8rem;
+    padding: 25px 0 25px 0;
+}
+
+article > i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--text-color--);
+    transition: .3s;
+}
+
+article > i:hover {
+    color: var(--blue-color--);
+}
+
+.extension {
+    display: none;
+    width: 100%;
+    background-color: var(--header-menu--);
+}
+
+.extension-img {
+    width: 30%;
+}
+
+.extension-img img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.extension-desc {
+    width: 70%;
+    flex-direction: column;
+    position: relative;
+}
+.extension-desc p {
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-top: 0;
+}
+
+.extension-emoji {
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+
+.extension-emoji ul {
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+}
+
+.extension-emoji ul li{
+    font-size: 1.5rem;
+    transition: .2s;
+}
+
+.extension-emoji ul li:hover{
+    color: var(--blue-color--);
+}
