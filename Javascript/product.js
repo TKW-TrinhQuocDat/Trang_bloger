@@ -1,98 +1,117 @@
 
-function ReadFile(postApi){
-    fetch(postApi)
-    .then(function(response){
+function login(){
+    var signinForm = document.querySelector(".header__end--sign-in");
+    signinForm.onclick = function(){
+        var logninForm = document.querySelector(".modal_login");
+        logninForm.style.display = 'flex';
+    }
+}
+function dangnhapuser(){
+    getUser(data => {
+        hanldelLogin(data);
+    })
+}
+function DangKiuser(){
+    getUser(data1 => {
+        hanldelCreateModal(data1);
+    })
+}
+var apiuser = "  http://localhost:3000/user";
+
+function getUser(callback){
+    fetch(apiuser).then(function(response){
         return response.json();
     })
-    
-    .then (function (post1){
-        var html = '';
-        var Changehtml = document.querySelector('.post__header');
-        html = `<div class="post__image">
-            <img src="${post1.background}" alt="Y nghia cuoc song">
-        </div>
-        <div class="post__title">
-            <div class="post__title-user">
-                <div class="body__thurmd">
-                    <a href="#" class="static-avatar">
-                        <img src="../img/avatar.jpg" alt="Avata" class="author-image" >
-                    </a>
-                </div>
-                <span class="name">Quốc Đạt</span>
-            </div>
-            <h1>${post1.titles}</h1>
-        </div>`;
-        Changehtml.innerHTML = html;
-        var html1 = ``;
-        for(let i = 0; i < post1.main.length; i++){
-            html1 += `  
-                    <h1>${post1.main[i].title}</h1>`;
-                    let n = post1.main[i].discription.length;
-                    for(let j = 0; j < n; j++){
-                        html1 += `<p>${post1.main[i].discription[j].mean}</p>`
-                    }
-        }
-        html1 += `</div>`;
-        var Changehtml = document.querySelector('.post__content');
-        console.log(Changehtml)
-        Changehtml.innerHTML = html1;
-        console.log(post1)
-    })
+    .then(callback);
 }
-
-function start(){
-    readFileTags(function(post){
-        randerTags(post);
-    })
-}
-
-window.onload = function(){
-    start();
-}
-
-
-function readFileTags(callback){
-    var posturl = '../Json_Life/life.json';
-    fetch(posturl)
-        .then (function(response){
-            return response.json();
-        })
-        .then(callback)
-}
-function randerTags(post){
-    var listTags = document.querySelector('.body__tags');
-    var htmls = ``;
-    let n = post.content.length;
-    let t = 0;
+function hanldelLogin(data){
+    var email = document.getElementById("email_dn");
+    var password = document.getElementById('password').value;
+    let e = checkEmail(email);
     let dem = 0;
-    for (let i=0; i < n; i++){
-        if(t >= 3) {
-            t = 0;
-            if(t===0 ) dem++;
+    for (let d of data){
+        if(e===true && d.email === email.value &&d.password === password){
+            dem = 1;
+            alert("Đăng Nhập Thành Công");
+            var modal = document.querySelector(".modal_login");
+            modal.style.display = 'none';
         }
-        console.log(post);
-        htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
-        <div class="tag__image">
-            <a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_life/${post.content[i].link}">
-                <img src="../img/Life_${i+1}.jpg" alt="Life">
-            </a>
-        </div>
-        <div class="content">
-            <div class="tag__title">
-                <h1><a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_life/${post.content[i].link}">${post.content[i].title}</a></h1>
-            </div>
-            <div class="tag__discription">
-                <span>${post.content[i].discription}</span>
-            </div>
-            <div class="tag__contact">
-                <div class="tag__contact-img">
-                    <a href=""><img src="../img/avatar.jpg" alt="avatar"></a>
-                </div>
-                <div> <p> -- 3 min read </p></div>
-            </div>
-        </div>
-    </div>`;
     }
-    if(htmls!==null) listTags.innerHTML = htmls;
+    if(dem === 0) alert("Đăng Nhập Không thành Công \n Hãy kiểm tra lại mật Khẩu của bạn ");
 }
+function hanldelCreateModal(data1){
+    var email = document.getElementById('email_dk');
+    var pw1 = document.getElementById("password1");
+    var pw2 = document.getElementById('password2');
+    let check = checkEmail(email);
+    let dem = 0;
+    console.log(data1);
+    if(check === true){
+        if(pw1.value === pw2.value){
+            for(let d of data1){
+                if(d.email === email.value){
+                    alert("Email của bạn đã được đăng kí ");
+                    dem = 1;
+                    break;
+                }
+            }
+            var user = {
+                email : email.value,
+                password : pw1.value
+            }
+            if(dem===0) {
+                CreateUser(user);
+                alert("Đăng kí tài Khoản thành công \n");
+            }
+        }
+
+    }
+}
+function CreateUser(data, callback){
+    var option = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+          },
+        body: JSON.stringify(data),
+    }
+   fetch(apiuser, option)
+    .then(function(){
+        return response.json();
+    })
+    .then(callback)
+}
+function ChangeModal(){
+    var registerForm = document.querySelector(".modal_register");
+    var logninForm = document.querySelector(".modal_login");
+        if(logninForm.style.display === 'none'){
+            registerForm.style.display = 'none';
+            logninForm.style.display = 'flex';
+        }else {
+            logninForm.style.display = 'none';
+            registerForm.style.display = 'flex';
+        }
+    
+}
+
+function NoneModal(){
+    var registerForm = document.querySelector(".modal_register");
+    var logninForm = document.querySelector(".modal_login");
+    let modal = document.querySelector(".modal");
+    modal.style.display = 'none';
+    if(logninForm.style.display === 'none'){
+        registerForm.style.display = 'none';
+    }else {
+        logninForm.style.display = 'none';
+    }
+}
+function checkEmail(email) { 
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    if (!filter.test(email.value)) { 
+             alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+             email.focus; 
+             return false; 
+    }
+    return true;
+} 
 

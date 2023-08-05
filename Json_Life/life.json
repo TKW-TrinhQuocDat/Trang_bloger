@@ -27,11 +27,13 @@
         },
         {
             "id": 5,
+            "link": "quality_of_life.html",
             "title": "Luận Văn FACTORS INFLUENCING QUALITY OF LIFE",
             "discription": "hy vọng đề tài Khóa luận tốt nghiệp này sẽ giúp các bạn có thêm tài liệu tham khảo khi viết Khóa luận tốt nghiệp của mình."
         },
         {
             "id": 6,
+            "link": "hanh_phuc_la_gi.html",
             "title": "Hạnh Phúc Là gì?",
             "discription": "Theo Ban hạnh phúc thực chất là Gì? Tại sao bạn lại thắc mắc? "
         }
