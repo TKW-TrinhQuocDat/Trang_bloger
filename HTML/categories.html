@@ -3,38 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trang blog ca nhan">
+        <meta name="keywords" content="trang blog ca nhan, Technology, Life, reader">
         <title>Trang blog về Công nghệ </title>
+        <link href="../img/blog_logo.png" rel="shortcut icon">
         <link rel="stylesheet" href="../CSS/base.css"/>
         <link rel="stylesheet" href="../CSS/main.css"/>
+        <link rel="stylesheet" href="../CSS/categories.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="../CSS/categories.css"/>
-        <link rel="stylesheet" href="../CSS/all-posts.css"/>
+        <script src="../Javascript/product.js"></script>
+        <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
+        <script src="../Javascript/mobile.js" ></script>
+
     </head>
 <body>
      <!-- header menu -->
      <div class="app">
-        <header class="header">
-            <div class="girt">
+        <header class="header ">
+            <div class="girt ">
                 <div class="alin-item d-flex">
                     <div class="header__logo">
-                        <a href="#"><img class="header__logo-img" src="https://upload.wikimedia.org/wikipedia/vi/0/02/DotBlog_domain_logo.png" alt="Logo Blog"/></a>
+                        <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog"/></a>
                     </div>
                     <div class="header__navbar-menu d-flex">
                         <nav class="header__navbar  ">
                             <ul class="header__navbar--list d-flex">
-                                <li class="header__navbar--list-item"><a href="./index.html">Home</a></li>
-                                <li class="header__navbar--list-item"><a href="./all-posts.html">All Posts</a></li>
-                                <li class="header__navbar--list-item"><a href="./categories.html">Categories</a></li>
+                                <li class="header__navbar--list-item"><a href="#">Home</a></li>
+                                <li class="header__navbar--list-item"><a href="#">All Posts</a></li>
+                                <li class="header__navbar--list-item"><a href="#">Categories</a></li>
                                 <li class="header__navbar--list-item"><a href="#">About</a></li>
                                 <li class="header__navbar--list-item"><a href="#">contact</a></li>
                                 <li class="dot ">
                                     <span class="list-item">. . .</span>
                                     <div class="list-item--menu">
                                         <ul class="list-item-app">
-                                            <li class="list-item-app-add"><a href="#">No code Việt Nam</a></li>
+                                            <li class="list-item-app-add"><a href="#">Technology</a></li>
                                             <li class="list-item-app-add"><a href="#">MVP</a></li>
                                             <li class="list-item-app-add"><a href="#">Buil Product</a></li>
-                                            <li class="list-item-app-add"><a href="#">blockchain</a></li>
+                                            <li class="list-item-app-add"><a href="#">Blockchain</a></li>
                                         </ul>
 
                                     </div>
@@ -46,12 +52,115 @@
                         <div class="header__end-seach">
                             <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
                         </div>
-                        <div class="header__end--sign-in">
+                        <div class="header__end--sign-in" onclick="login()">
                             <div><a href="#">Sign In</a></div></div>
                     </div>
                 </div>
-                
             </div>
+            <div onclick="startmenu()" class="next-modal"><i class="fa-solid fa-forward"></i></div>
+                <!-- form đằng kí  -->
+            <div class="modal modal_register" >
+                <div class="modal__overlay" onclick="NoneModal()"></div>
+                <div class="modal__body">
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng kí</h3>
+                                <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng Nhập</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input id="email_dk" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="password1" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="password2" type="password" class="auth-form__input" placeholder="Nhập lại mật Khẩu">
+                                </div>
+                            </div>
+                            
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
+                                    Điều Khoản dịch vụ &
+                                    Chính sách bảo mật 
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--primary" onclick="DangKiuser()">ĐĂNG KÍ</button>
+                            </div>
+        
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
+                                <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials--title--fb">
+                                    kết nối với facebook
+                                </span>
+                            </a>
+                            <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
+                                <i class="auth-form__socials--google fa-brands fa-google"></i>
+                                <span class="auth-form__socials--title-gg">
+                                    Kết nối với Google 
+                                </span>
+                            </a>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>     
+               
+            <!-- form đăng nhập  -->
+            <!-- modal_login -->
+            <div class="modal modal_login">
+                <div class="modal__overlay " onclick="NoneModal()"></div>
+                <div class="modal__body">
+                
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng kí</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input id="email_dn" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="password" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
+                                </div>
+                            </div>
+                            
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
+                                    Điều Khoản dịch vụ &
+                                    Chính sách bảo mật 
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--primary" onclick="dangnhapuser()">Đăng nhập</button>
+                            </div>
+
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
+                                <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials--title--fb">
+                                    kết nối với facebook
+                                </span>
+                            </a>
+                            <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
+                                <i class="auth-form__socials--google fa-brands fa-google"></i>
+                                <span class="auth-form__socials--title-gg">
+                                    Kết nối với Google 
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
         </header>
     </div>
     <!-- Phan body  -->
@@ -69,7 +178,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="#"">Technology</a>
+                    <a href="#">Technology</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Các bài viết về lập trình, công nghệ</p>
@@ -84,7 +193,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="#"">Build the product</a>
+                    <a href="#">Build the product</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Trong tổng thể, việc xây dựng một sản phẩm kỹ thuật số hoặc phần mềm đòi hỏi sự kiên trì, cần cù và kỹ năng quản lý tốt. Bạn cần phải tìm kiếm ý tưởng, xác thực ý tưởng, phát triển sản phẩm, ra mắt sản phẩm, tăng trưởng, kiếm tiền, tự động hoá và cuối cùng là bán doanh nghiệp nếu muốn tiến xa trên con đường khởi nghiệp. Chúc bạn thành công!</p>
@@ -99,7 +208,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="#"">Business</a>
+                    <a href="#">Business</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Business</p>
@@ -114,7 +223,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="#"">Problem & Idea</a>
+                    <a href="#">Problem & Idea</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Problem & Idea</p>
@@ -129,7 +238,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="./life.html"">Life</a>
+                    <a href="../img/Life.jpg">Life</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Life</p>
@@ -144,7 +253,7 @@
             </a>
             <div class="tag__content">
                 <div class="tag_content-title">
-                    <a href="#"">Travel</a>
+                    <a href="#">Travel</a>
                 </div>
                 <div class="tag_content-desc">
                     <p>Đi du lịch là một phương tiện tuyệt vời để trải nghiệm thế giới, giải trí và nâng cao sức khỏe tinh thần. Khi đã đạt được tự do tài chính, bạn có thể tập trung vào việc du lịch một cách thoải mái hơn mà không lo lắng về chi phí.
@@ -155,7 +264,7 @@
             </div>
         </section>
     </div>
-</div>
+    </div>
 </div>
 
      <!-- Phần Footer -->

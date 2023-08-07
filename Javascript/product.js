@@ -115,3 +115,17 @@ function checkEmail(email) {
     return true;
 } 
 
+function scrolled(){
+    var menu = document.querySelector('.app');
+        window.addEventListener("scroll", function() {
+            var scrollPosition = window.scrollY;
+            if (scrollPosition > 150) {
+              menu.classList.add("fixed");
+            } 
+            if(scrollPosition=== 0)
+                menu.classList.remove("fixed");
+    });
+}
+window.onload = function(){
+    scrolled();
+}

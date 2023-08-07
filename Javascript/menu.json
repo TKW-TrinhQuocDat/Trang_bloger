@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "modal": "Home"
+    },{
+        "id": 2,
+        "modal": "All Posts"
+    },{
+        "id": 3,
+        "modal": "Categories"
+    },{
+        "id": 4,
+        "modal": "About"
+    },{
+        "id": 5,
+        "modal": "contact"
+    },{
+        "id": 6,
+        "modal": "Technology"
+    },{
+        "id": 7,
+        "modal": "MVP"
+    },{
+        "id": 8,
+        "modal": "Buil Product"
+    },{
+        "id": 9,
+        "modal": "Blockchain"
+    }
+]

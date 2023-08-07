@@ -21,7 +21,10 @@
 } 
 .d-flex{
     display: flex;
-}    
+}   
+body{
+    background-color: var(--body--);
+} 
 /* aminnation */
 @keyframes falein{
     from{
@@ -87,4 +90,19 @@ html{
     to{
         transform: scale(var(--Grouwth-to));
     }
+}
+@keyframes scroller{
+    form {
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.scroll{
+    animation: scroller ease-in 1s;
+}
+.fixed{
+    position: fixed;
+    top: 0;
 }

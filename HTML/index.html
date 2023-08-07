@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang blog ca nhan">
+    <meta name="keywords" content="trang blog ca nhan, Technology, Life, reader">
     <title>Trang blog về Công nghệ </title>
+    <link href="../img/blog_logo.png" rel="shortcut icon">
     <link rel="stylesheet" href="../CSS/base.css"/>
     <link rel="stylesheet" href="../CSS/main.css"/>
+    <link rel="stylesheet" href="../CSS/categories.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="../Javascript/product.js"></script>
+    <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
+    <script src="../Javascript/mobile.js" ></script>
 </head>
 <body>
     <!-- header menu -->
     <div class="app">
-        <header class="header">
-            <div class="girt">
+        <header class="header ">
+            <div class="girt ">
                 <div class="alin-item d-flex">
                     <div class="header__logo">
-                        <a href="#"><img class="header__logo-img" src="https://upload.wikimedia.org/wikipedia/vi/0/02/DotBlog_domain_logo.png" alt="Logo Blog"/></a>
+                        <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog"/></a>
                     </div>
                     <div class="header__navbar-menu d-flex">
                         <nav class="header__navbar  ">
@@ -30,10 +36,10 @@
                                     <span class="list-item">. . .</span>
                                     <div class="list-item--menu">
                                         <ul class="list-item-app">
-                                            <li class="list-item-app-add"><a href="#">No code Việt Nam</a></li>
+                                            <li class="list-item-app-add"><a href="#">Technology</a></li>
                                             <li class="list-item-app-add"><a href="#">MVP</a></li>
                                             <li class="list-item-app-add"><a href="#">Buil Product</a></li>
-                                            <li class="list-item-app-add"><a href="#">blockchain</a></li>
+                                            <li class="list-item-app-add"><a href="#">Blockchain</a></li>
                                         </ul>
 
                                     </div>
@@ -50,6 +56,7 @@
                     </div>
                 </div>
             </div>
+            <div onclick="startmenu()" class="next-modal"><i class="fa-solid fa-forward"></i></div>
                 <!-- form đằng kí  -->
             <div class="modal modal_register" >
                 <div class="modal__overlay" onclick="NoneModal()"></div>
@@ -163,7 +170,7 @@
                 <div class="body__col-lable1">
                     <p class="body__follow-title">Đăng ký email newsletter để nhận được bài viết mới nhất (No spam)</p>
                 </div>
-                <div class="body__col-lb2">
+                <!-- <div class="body__col-lb2">
                     <form action="" class="body__form">
                         <div class="input-group">
                             <input class="subscribe-email form-control"  placeholder="Email Address" type="email" >
@@ -171,98 +178,116 @@
                                 Follow
                             </button>
                         </div>
-                        <!-- <div class="message-success">
+                        <div class="message-success">
                             Great! Check your inbox and click the link to confirm your subscription.
                         </div>
                         <div class="message-error">
                             Please enter a valid email address!
-                        </div> -->
+                        </div>
                     </form>
                     
 
-                </div>
+                </div> -->
             </div>
         </div>
 
     </section>
-    <!-- <section class="body__futher-post">
-        <div class="body__container-fluid">
-            <div class="body__container-fluid--row">
-                <div class="body__container-fluid--col">
-                    <article class="body__container-fluid-technology">
-                        <figure class="body__container-fluid-wrap">
-                            <a href="#"><img src="https://media.baodautu.vn/Images/phuongthanh02/2023/02/07/ChatGPT.jpg"
-                                 alt="Đối thoại với chatgpt" class="body__container-fluid-post-cart" width="416" height="416">
-                            </a>
-                            <div class="body__entry-user">
-                                <div class="body__thurmd">
-                                    <a href="#" class="static-avatar">
-                                        <img src="../img/avatar.jpg" alt="Avata" class="author-image" >
-                                    </a>
-                                </div>
-                                <span class="loop-reading-time">-- 5 min reading</span>
-                            </div>
-                           
-                        </figure>
-                        <div class="conect__entry-wrap">
-                            <div class="entry-category">
-                                <a href="#">Technology</a>
-                            </div>
-                            <h3 class="entry__title">
-                                <a href="">Đối thoại với ChatGPT và Những điều bạn cần biết về công nghệ</a>
-                            </h3>
-                        </div>
-                    </article>
-                    <article class="body__container-fluid-technology">
-                        <figure class="body__container-fluid-wrap">
-                            <a href="#"><img src="https://media.baodautu.vn/Images/phuongthanh02/2023/02/07/ChatGPT.jpg"
-                                 alt="Đối thoại với chatgpt" class="body__container-fluid-post-cart" width="416" height="416">
-                            </a>
-                            <div class="body__entry-user">
-                                <div class="body__thurmd">
-                                    <a href="#" class="static-avatar">
-                                        <img src="../img/avatar.jpg" alt="Avata" class="author-image" >
-                                    </a>
-                                </div>
-                                <span class="loop-reading-time">-- 5 min reading</span>
-                            </div>
-                        </figure>
-                        <div class="conect__entry-wrap">
-                            <div class="entry-category">
-                                <a href="#">Technology</a>
-                            </div>
-                            <h3 class="entry__title">
-                                <a href="">Đối thoại với ChatGPT và Những điều bạn cần biết về công nghệ</a>
-                            </h3>
-                        </div>
-                    </article>
-                    <article class="body__container-fluid-technology">
-                        <figure class="body__container-fluid-wrap">
-                            <a href="#"><img src="https://media.baodautu.vn/Images/phuongthanh02/2023/02/07/ChatGPT.jpg"
-                                 alt="Đối thoại với chatgpt" class="body__container-fluid-post-cart" width="416" height="416">
-                            </a>
-                            <div class="body__entry-user">
-                                <div class="body__thurmd">
-                                    <a href="#" class="static-avatar">
-                                        <img src="../img/avatar.jpg" alt="Avata" class="author-image" >
-                                    </a>
-                                </div>
-                                <span class="loop-reading-time">-- 5 min reading</span>
-                            </div>
-                        </figure>
-                        <div class="conect__entry-wrap">
-                            <div class="entry-category">
-                                <a href="#">Technology</a>
-                            </div>
-                            <h3 class="entry__title">
-                                <a href="">Đối thoại với ChatGPT và Những điều bạn cần biết về công nghệ</a>
-                            </h3>
-                        </div>
-                    </article>
+    <div class="tags-container body__container">
+        <div class="tags d-flex">
+        <section class="tag">
+            <a class="tag_thumb-img" href="#">
+                <img src="../img/technology.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="#">Technology</a>
                 </div>
+                <div class="tag_content-desc">
+                    <p>Các bài viết về lập trình, công nghệ</p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
             </div>
-        </div>
-    </section> -->
+        </section>
+        
+        <section class="tag ">
+            <a class="tag_thumb-img" href="#">
+                <img src="../img/build-the-product.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="#">Build the product</a>
+                </div>
+                <div class="tag_content-desc">
+                    <p>Trong tổng thể, việc xây dựng một sản phẩm kỹ thuật số hoặc phần mềm đòi hỏi sự kiên trì, cần cù và kỹ năng quản lý tốt. Bạn cần phải tìm kiếm ý tưởng, xác thực ý tưởng, phát triển sản phẩm, ra mắt sản phẩm, tăng trưởng, kiếm tiền, tự động hoá và cuối cùng là bán doanh nghiệp nếu muốn tiến xa trên con đường khởi nghiệp. Chúc bạn thành công!</p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
+            </div>
+        </section>
+
+        <section class="tag ">
+            <a class="tag_thumb-img" href="#">
+                <img src="../img/bussiness.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="#">Business</a>
+                </div>
+                <div class="tag_content-desc">
+                    <p>Business</p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
+            </div>
+        </section>
+
+        <section class="tag ">
+            <a class="tag_thumb-img" href="#">
+                <img src="../img/problem.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="#">Problem & Idea</a>
+                </div>
+                <div class="tag_content-desc">
+                    <p>Problem & Idea</p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
+            </div>
+        </section>
+
+        <section class="tag ">
+            <a class="tag_thumb-img" href="./life.html">
+                <img src="../img/no-code.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="../img/Life.jpg">Life</a>
+                </div>
+                <div class="tag_content-desc">
+                    <p>Life</p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
+            </div>
+        </section>
+
+        <section class="tag ">
+            <a class="tag_thumb-img" href="#">
+                <img src="../img/travel.jpg" alt="Technology">
+            </a>
+            <div class="tag__content">
+                <div class="tag_content-title">
+                    <a href="#">Travel</a>
+                </div>
+                <div class="tag_content-desc">
+                    <p>Đi du lịch là một phương tiện tuyệt vời để trải nghiệm thế giới, giải trí và nâng cao sức khỏe tinh thần. Khi đã đạt được tự do tài chính, bạn có thể tập trung vào việc du lịch một cách thoải mái hơn mà không lo lắng về chi phí.
+
+                    </p>
+                </div>
+                <div class="tag_content-post-number">100 posts</div>
+            </div>
+        </section>
+    </div>
+    </div>
+
     <section class="body__top-tags">
         <div class="tags__container">
             <div class="tags__container-row">
