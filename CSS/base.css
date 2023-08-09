@@ -103,6 +103,7 @@ html{
     animation: scroller ease-in 1s;
 }
 .fixed{
+    z-index: 99;
     position: fixed;
     top: 0;
 }
