@@ -28,7 +28,8 @@
     width: 100%;
 }
 .modal__body{
-    margin: auto 24px;
+    margin: auto;
+    width: 90%;
 }
 body{
     width: 100%;
@@ -102,4 +103,50 @@ div.widget__content > ul > li > a{
 }
 .gobal__header-image{
     width: 80%;
+}
+.header__navbar--list-item a{
+    font-size: 1.8rem;
+}
+.header__navbar--list-item{
+    line-height: 3.5rem;
+}
+.auth-form__socials--title--fb, .auth-form__socials--title-gg{
+    font-size: 1.2rem;
+}
+.container1{
+    padding: 50px 4px;
+}
+.post__header{
+    flex-wrap: wrap;
+}
+.post__image{
+    width: 95%;
+    margin: auto;
+}
+.auth-form__policy-text{
+    font-size: 1rem;
+}
+.post__title{
+    width: 100%;
+    margin: 12px 0;
+}
+div.post__content{
+    width: 90%;
+}
+div.post__content >h1{
+    line-height: 3.2rem;
+}
+.post__footer{
+    width: 100%;    
+}
+div.socal_network ul{
+    padding: 0;
+}
+div.socal_network ul > li > a{
+    font-size: 1.7rem;
+    margin: 0;
+}
+.footer__width-area{
+    height: 0;
+    width: 0;
 }
