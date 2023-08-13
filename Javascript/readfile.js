@@ -8,7 +8,7 @@ function ReadFile(postApi){
         var html = '';
         var Changehtml = document.querySelector('.post__header');
         html = `<div class="post__image">
-            <img src="${post1.background}" alt="Y nghia cuoc song">
+            <img src="${post1.background}" >
         </div>
         <div class="post__title">
             <div class="post__title-user">
@@ -39,26 +39,19 @@ function ReadFile(postApi){
     })
 }
 
-function start(){
-    readFileTags(function(post){
-        randerTags(post);
+function start(posturl, x){
+    readFileTags(posturl, function(post){
+        randerTags(post, x);
     })
 }
-
-window.onload = function(){
-    start();
-}
-
-
-function readFileTags(callback){
-    var posturl = '../Json_Life/life.json';
+function readFileTags(posturl, callback){
     fetch(posturl)
         .then (function(response){
             return response.json();
         })
         .then(callback)
 }
-function randerTags(post){
+function randerTags(post, x){
     var listTags = document.querySelector('.body__tags');
     var htmls = '';
     let n = post.content.length;
@@ -71,8 +64,8 @@ function randerTags(post){
         }
         htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
         <div class="tag__image">
-            <a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_life/${post.content[i].link}">
-                <img src="../img/Life_${i+1}.jpg" alt="Life">
+            <a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_${x}/${post.content[i].link}">
+                <img src="../img/${x}_${i+1}.jpg" alt="Life">
             </a>
         </div>
         <div class="content">

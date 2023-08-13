@@ -1,6 +1,6 @@
 {
    
-    "background":"../img/Life_1.jpg",
+    "background":"../img/traval_3.jpg",
     "titles": "Địa Điểm vui chơi, check in cực đẹp tại vũng tàu",
     "main" : [
         {
@@ -159,7 +159,7 @@
                     "mean": "khu Suối Tiên – được ví như Đà Lạt thứ hai- nằm trên núi Dinh, suối là tập hợp của nhiều suối, thác, sông đổ xuống từ độ cao vài trăm mét. Càng lên cao, cảnh vật ở suối càng đẹp và lạ mắt. Dọc suối là những tảng đá hình thù độc đáo, gốc cổ thụ lâu đời, những triền hoa vàng ruộm,…"
                 }, {
                     "id": 3,
-                    "mean": "img style='height: 520px; width: 800px; border-radius: 50px;' src='../img/khu_du_lich_suoi_tien_vt.jpg' /> "
+                    "mean": "<img style='height: 520px; width: 800px; border-radius: 50px;' src='../img/khu_du_lich_suoi_tien_vt.jpg' /> "
                 }
             ]
         },{
@@ -175,7 +175,7 @@
                     "mean": "Biển suối Ồ là một trong những bãi biển hiếm hoi ở Việt Nam vừa có nước ngọt và nước mặn. Điểm đặc biệt của bãi biển này là có hai đường nước xanh biếc song song nối sông và biển bị ngăn cách bởi triền cát trắng xóa."
                 }, {
                     "id": 3,
-                    "mean": "img style='height: 520px; width: 800px; border-radius: 50px;' src='../img/bien_suoi_o.jpg' />"
+                    "mean": "<img style='height: 520px; width: 800px; border-radius: 50px;' src='../img/bien_suoi_o.jpg' />"
                 }
             ]
         },

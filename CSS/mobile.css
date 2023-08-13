@@ -150,3 +150,7 @@ div.socal_network ul > li > a{
     height: 0;
     width: 0;
 }
+.post__content > p > img{
+    width: 95%;
+    margin: auto;
+}

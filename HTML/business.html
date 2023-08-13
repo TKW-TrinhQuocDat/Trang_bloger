@@ -9,12 +9,11 @@
         <link href="../img/blog_logo.png" rel="shortcut icon">
         <link rel="stylesheet" href="../CSS/base.css"/>
         <link rel="stylesheet" href="../CSS/main.css"/>
+        <link rel="stylesheet" href="../CSS/life.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <script src="../Javascript/product.js"></script>
-        <link rel="stylesheet" href="../CSS/baiviet.css"/>
-        <script src="../Javascript/product.js"></script>
+        <script src="../Javascript/mobile.js" ></script>
         <script src="../Javascript/readfile.js"></script>
-        <script src="../Javascript/mobile.js"></script>
         <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
 
     </head>
@@ -166,48 +165,34 @@
         </header>
     </div>
     <!-- Phan body  -->
-  
-    <div class="container1">
-        <div class="post__header d-flex">
+    <div class="body_app">
+        <div class="gobal">
+            <div class="gobal__header">
+                <div class="gobal__header-image">
+                    <img src="../img/business.jpg" alt="life">
+                </div>
+                <div class="d-flex margin">
+                    <div class="gobal__header-title">
+                        <h1>Life</h1>
+                    </div>
+                    <div class="gobal__header-inner">
+                        <h1>( 15 post )</h1>
+                    </div>
+                </div>
+              
+        
+                <div class="gobal__header-dicription">
+                    <p>Life</p>
+                </div>
+            </div>
         </div>
-        <div class="post__content">
-            
-            
-        </div>
-        <div class="post__footer">
-            <div class="socal_network ">
-                <ul class="d-flex">
-                    <li>Share: </li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/">
-                            <i class="fa-brands fa-facebook"></i>
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank"  href="https://twitter.com/home">
-                            <i class="fa-brands fa-twitter"></i>
-                            <span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank"  href="https://www.linkedin.com/">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span>Linkedin</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank"  href="https://mail.google.com/mail">
-                            <i class="fa-solid fa-envelope"></i>
-                        <span>Email</span>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="body__tags">
+                
             </div>
         </div>
     </div>
-    
-
+       
 
 
 
@@ -277,11 +262,9 @@
             </div>
             <div class="footer__end-bottom"></div>
         </div>
-        
     </footer>
     <script>
-        var linkfile = '../Json_Life/hanh_phuc_la_gi.json';
-        ReadFile(linkfile);
+        start("../Json_Business/business.json", 'business');
     </script>
 </body>
 </html>
