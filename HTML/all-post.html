@@ -109,7 +109,6 @@
                   </div>
               </div>
           </div>     
-             
           <!-- form đăng nhập  -->
           <!-- modal_login -->
           <div class="modal modal_login">
@@ -164,128 +163,9 @@
       </header>
   </div>
     <!-- Phần Body -->
-    <div class="main-app">
-      <div class="body__container">
-        <div class="main-col">
-          <div class="main-app-header">
-            <h1 class="main-app-header__title">All Posts</h1>
-            <div class="main-app-header__cript">
-              Browse the complete archive of 100 posts.
-            </div>
-          </div>
-
-          <!-- So bai post cua nam 2023 -->
-          <div class="text-year">2023 <i onclick="onClickYear()" class="fa-solid fa-caret-down"></i></div>
-          <div id="posts_2023">
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2023</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-            <i onclick="onClick()" class="fa-solid fa-caret-down"></i>
-          </article>
-
-          <div id="ext" class="extension d-flex">
-            <div class="extension-img">
-              <a href="#"><img src="../img/Life.jpg" alt="Life" /></a>
-            </div>
-            <div class="extension-desc d-flex">
-              <a href="#">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, similique fuga quasi reiciendis perferendis quia
-                aliquid veniam dolore laboriosam distinctio? Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Quaerat, similique fuga
-                quasi reiciendis perferendis quia aliquid veniam dolore
-                laboriosam distinctio?</p>
-              </a>
-              <div class="extension-emoji">
-                <ul class="d-flex">
-                  <li><i onclick="like()" class="fa-solid fa-heart"></i><span id="like-cnt"  style="padding-left: 5px">0</span></li>
-                  <li><i class="fa-solid fa-comment"></i></li>
-                  <li><i class="fa-solid fa-share"></i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2023</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2023</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2023</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-        </div>
-          <!-- So bai post cua nam 2022 -->
-          <div class="text-year">2022</div>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2022</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2022</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2022</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2022</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-
-          <!-- So bai post cua nam 2021 -->
-          <div class="text-year">2021</div>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2021</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2021</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2021</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-          <article class="post d-flex">
-            <div class="post__time-border">30 Jul 2021</div>
-            <h2 class="post__title">
-              <a class="post__link" href="#">Quyển sách về cây cối hay nhất</a>
-            </h2>
-          </article>
-        </div>
-      </div>
+    <div id="posts" class="posts body__container">
+        
     </div>
-
-
-
 
 
 
@@ -357,5 +237,6 @@
         </div>
     </footer>
     
+    <script src="../Javascript/all-posts.js"></script>
 </body>
 </html>

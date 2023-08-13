@@ -1,31 +1,42 @@
-var cnt = 0;
-function onClick() {
-    
-    if(cnt === 0) {
-        document.querySelector('#ext').style.display = "flex"
-        cnt++;
-    }
-    else {
-        document.querySelector('#ext').style.display = "none"
-        cnt--;
-    }
+function createPost() {
+    fetch('../Javascript/allpost.json')
+    .then((res) => res.json())
+    .then((data) => {
+        let output = ''
+        data.forEach((post) => {
+            // console.log(post.url)
+            fetch(post.url)
+            .then((res) => res.json())
+            .then((data) => {
+                // console.log(post.linktag)
+                output += `
+                <div id="post-${post.id}" class="post">
+                <div class="post-img">
+                    <a href=${post.link}><img src=${data.background} alt=""></a>
+                </div>
+                <div class="post-content">
+                    <div class="post-tag"><a href=${post.linktag}>${post.tag}</a></div>
+                    <h2 class="post-title"><a href=${post.link}>${data.titles}</a></h2>
+                    <div class="post-desc">
+                        ${data.main[0].discription[0].mean}
+                    </div>
+                    <div class="subcontent">
+                        <div><i class="fa-regular fa-calendar-minus"></i>${post.time}</div>
+                        <div id="like-${post.id}"><i class="fa-solid fa-heart"></i>99</div>
+                        <div><i class="fa-solid fa-comment-dots"></i>0</div>
+                        <div><i class="fa-solid fa-share-nodes"></i></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                `
+                document.getElementById("posts").innerHTML = output
+            })
+
+         })
+    })
 }
 
-var like_cnt = 0;
-function like() {
-    like_cnt++;
-    document.querySelector('#like-cnt').innerText = like_cnt;
-}
+createPost()
 
-var cnt = 0;
-function onClickYear() {
-    
-    if(cnt === 0) {
-        document.querySelector('#posts_2023').style.display = "none"
-        cnt++;
-    }
-    else {
-        document.querySelector('#posts_2023').style.display = "flex"
-        cnt--;
-    }
-}
+
