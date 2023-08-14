@@ -151,6 +151,23 @@ div.socal_network ul > li > a{
     width: 0;
 }
 .post__content > p > img{
-    width: 95%;
+    width: 100% !important;
+    height: 220px !important;
     margin: auto;
+    border-radius: 20px !important;
+}
+
+.post__title > h1{
+    font-size: 3.3rem;
+    line-height: 3.8rem;
+}
+div.post__content > p, ul > li{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+div.contact > ul > li> a, div.contact > ul > li{
+    font-size: 1.8rem;
+}
+div.contact >h1{
+    font-size: 5rem;
 }

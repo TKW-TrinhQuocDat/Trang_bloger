@@ -70,7 +70,7 @@ function randerTags(post, x){
         </div>
         <div class="content">
             <div class="tag__title">
-                <h1><a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_life/${post.content[i].link}">${post.content[i].title}</a></h1>
+                <h1><a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_${x}/${post.content[i].link}">${post.content[i].title}</a></h1>
             </div>
             <div class="tag__discription">
                 <span>${post.content[i].discription}</span>

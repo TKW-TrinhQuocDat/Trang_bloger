@@ -39,6 +39,7 @@ div.post__content{
 }
 div.post__content >h1{
     font-size: 3rem;
+    line-height: 3,2rem;
     font-weight: 600;
     color: var(--text-color--);
 }

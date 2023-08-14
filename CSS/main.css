@@ -544,116 +544,6 @@ figure.body__container-fluid-wrap > a{
     color: white;
     background-color: var(--blue-color--);
 }
-/* .auth-form{
-    width: 500px;
-    overflow: hidden;
-    border-radius: 5px;
-}
-.auth-form__container{
-    padding: 0 32px;
-}
-.auth-form__header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.auth-form__heading{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    color: #615e5e;
-}
-.auth-form__switch-btn{
-    font-size: 1.6rem;
-    font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(241, 87, 59);
-    cursor: pointer;
-}
-
-.auth-form__input{
-    width: 100%;
-    height: 40px;
-    margin-top: 16px;
-    font-size: 1.2rem;
-    padding: 0 12px;
-    box-sizing: border-box;
-    border: 1px solid #d7d7d7;
-    border-radius: 2px;
-    outline: none;
-}
-.auth-form__input:focus{
-    border-color: #868383;
-}
-.auth-form__aside{
-    margin-top: 18px;
-}
-.auth-form__policy-text{
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0 12px;
-}
-.auth-form__text-link{
-    color: var(--blue-color--);
-    text-decoration: none;
-}
-.auth-form__control{
-    margin-top: 80px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 18px;
-}
-
-.btn.btn__hover:hover{
-    background-color: rgba(0,0,0,0.2);
-    color: rgb(114, 114, 114);
-}
-.btn.btn--primary{
-    color: white;
-    background-color: var(--blue-color--);
-}
-.btn.btn--disable{
-    background-color: rgba(0,0,0,0.2);
-    color: lightgray;
-    cursor: default;
-}
-.auth-form__socials{
-    background-color: rgb(187, 189, 190);
-    padding: 12px 36px;
-    display: flex;
-    justify-content: space-between;
-  
-}
-
-.btn.auth-form__socials--icon{
-    font-size: 1.2rem;
-
-}
-.btn.auth-form__socials--fb{
-    background-color: #1877f2;
-}
-.auth-form__socials--title--fb{
-    font-size: 1.5rem;
-    margin: 0 24px;
-    color: white;
-}
-.auth-form__socials--title-gg{
-    font-size: 1.5rem;
-    margin: 0 24px;
-    color: black;
-}
-.auth-form__socials--facebook{
-    margin-left: 12px;
-    font-size: 1.8rem;
-    background-color: #1877f2;
-    color: white;
-}
-.auth-form__socials--google{
-    margin-left: 12px;
-    font-size: 1.8rem;
-    color: red;
-} */
-
 .auth-form{
     width: 500px;
     overflow: hidden;
@@ -764,4 +654,56 @@ figure.body__container-fluid-wrap > a{
     margin-left: 12px;
     font-size: 1.8rem;
     color: red;
+}
+div.about{
+    width: 80%;
+    margin: auto;
+}
+div.about > h1{
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7.5rem;
+    color: var(--text-color--);
+    text-align: center;
+}
+div.about p, div.about > ul > li{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--mean-color--);
+}
+div.border_left{
+    border-left: 4px solid var(--blue-color--);
+}
+div.border_left p{
+    margin-left: 36px;
+}
+div.about img{
+    width: 100%;
+    border-radius: 50px;
+}
+div.contact{
+    width: 80%;
+    margin: auto;
+}
+div.contact >h1{
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 7.5rem;
+    color: var(--text-color--);
+    text-align: center;
+}
+div.contact > img{
+    border-radius: 50px;
+    width: 100%;
+}
+div.contact > p{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: var(--mean-color--);
+}
+div.contact > ul > li> a, div.contact > ul > li{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: var(--mean-color--);
+    text-decoration: none;
 }
