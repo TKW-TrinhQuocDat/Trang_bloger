@@ -40,3 +40,25 @@ function createPost() {
 createPost()
 
 
+function search() {
+    var searchbox = document.getElementById("search-blog").value.toUpperCase()
+    var posts = document.getElementById("posts")
+    var post = document.querySelectorAll(".post")
+    var titlePost = document.querySelectorAll(".post-title a")
+    // console.log(post.length)
+    for(var i = 0; i < post.length; i++) {
+        var match = titlePost[i].textContent
+        if(match.toUpperCase().indexOf(searchbox) > -1) {
+            post[i].style.display = ""
+        }
+        else {
+            post[i].style.display = "none"
+        }
+        // console.log(match)
+    }
+}
+
+search()
+
+var x = document.querySelectorAll(".post")
+console.log(x)

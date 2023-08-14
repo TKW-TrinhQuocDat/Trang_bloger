@@ -1,171 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trang blog ca nhan">
-  <meta name="keywords" content="trang blog ca nhan, Technology, Life, reader">
-  <title>Trang blog về Công nghệ </title>
-  <link href="../img/blog_logo.png" rel="shortcut icon">
-  <link rel="stylesheet" href="../CSS/base.css"/>
-  <link rel="stylesheet" href="../CSS/main.css"/>
-  <link rel="stylesheet" href="../CSS/all-posts.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <script src="../Javascript/product.js"></script>
-  <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
-  <script src="../Javascript/mobile.js" ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang blog ca nhan">
+    <meta name="keywords" content="trang blog ca nhan, Technology, Life, reader">
+    <title>Trang blog về Công nghệ </title>
+    <link href="../img/blog_logo.png" rel="shortcut icon">
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/all-posts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="../Javascript/product.js"></script>
+    <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
+    <script src="../Javascript/mobile.js"></script>
 
 </head>
+
 <body>
     <!-- header menu -->
     <div class="app">
-      <header class="header ">
-          <div class="girt ">
-              <div class="alin-item d-flex">
-                  <div class="header__logo">
-                      <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog"/></a>
-                  </div>
-                  <div class="header__navbar-menu d-flex">
-                    <nav class="header__navbar  ">
-                        <ul class="header__navbar--list d-flex">
-                            <li class="header__navbar--list-item"><a href="../HTML/index.html">Home</a></li>
-                            <li class="header__navbar--list-item"><a href="../HTML/all-post.html">All Posts</a></li>
-                            <li class="header__navbar--list-item"><a href="../HTML/categories.html">Categories</a></li>
-                            <li class="header__navbar--list-item"><a href="../HTML/about.html">About</a></li>
-                            <li class="header__navbar--list-item"><a href="../HTML/contact.html">contact</a></li>
-                            <li class="dot ">
-                                <span class="list-item">. . .</span>
-                                <div class="list-item--menu">
-                                    <ul class="list-item-app">
-                                        <li class="list-item-app-add"><a href="../HTML/technology.html">Technology</a></li>
-                                        <li class="list-item-app-add"><a href="../HTML/business.html">Business</a></li>
-                                        <li class="list-item-app-add"><a href="../HTML/build_the_product.html">Buil Product</a></li>
-                                        <li class="list-item-app-add"><a href="../HTML/traval.html">Travel</a></li>
-                                    </ul>
+        <header class="header ">
+            <div class="girt ">
+                <div class="alin-item d-flex">
+                    <div class="header__logo">
+                        <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog" /></a>
+                    </div>
+                    <div class="header__navbar-menu d-flex">
+                        <nav class="header__navbar  ">
+                            <ul class="header__navbar--list d-flex">
+                                <li class="header__navbar--list-item"><a href="../HTML/index.html">Home</a></li>
+                                <li class="header__navbar--list-item"><a href="../HTML/all-post.html">All Posts</a></li>
+                                <li class="header__navbar--list-item"><a href="../HTML/categories.html">Categories</a>
+                                </li>
+                                <li class="header__navbar--list-item"><a href="../HTML/about.html">About</a></li>
+                                <li class="header__navbar--list-item"><a href="../HTML/contact.html">contact</a></li>
+                                <li class="dot ">
+                                    <span class="list-item">. . .</span>
+                                    <div class="list-item--menu">
+                                        <ul class="list-item-app">
+                                            <li class="list-item-app-add"><a
+                                                    href="../HTML/technology.html">Technology</a></li>
+                                            <li class="list-item-app-add"><a href="../HTML/business.html">Business</a>
+                                            </li>
+                                            <li class="list-item-app-add"><a href="../HTML/build_the_product.html">Buil
+                                                    Product</a></li>
+                                            <li class="list-item-app-add"><a href="../HTML/traval.html">Travel</a></li>
+                                        </ul>
 
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__end d-flex">
+                        <div class="header__end-seach">
+                            <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <div class="header__end--sign-in" onclick="login()">
+                            <div><a href="#">Sign In</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div onclick="startmenu()" class="next-modal"><i class="fa-solid fa-forward"></i></div>
+            <!-- form đằng kí  -->
+            <div class="modal modal_register">
+                <div class="modal__overlay" onclick="NoneModal()"></div>
+                <div class="modal__body">
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng kí</h3>
+                                <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng Nhập</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input id="email_dk" name="email" type="text" class="auth-form__input"
+                                        placeholder="Nhập email của bạn">
                                 </div>
-                            </li>
-                        </ul>
-                    </nav>
-                  </div>
-                  <div class="header__end d-flex">
-                      <div class="header__end-seach">
-                          <a href="#"><i class=" fa-solid fa-magnifying-glass"></i></a>
-                      </div>
-                      <div class="header__end--sign-in" onclick="login()">
-                          <div><a href="#">Sign In</a></div></div>
-                  </div>
-              </div>
-          </div>
-          <div onclick="startmenu()" class="next-modal"><i class="fa-solid fa-forward"></i></div>
-              <!-- form đằng kí  -->
-          <div class="modal modal_register" >
-              <div class="modal__overlay" onclick="NoneModal()"></div>
-              <div class="modal__body">
-                  <div class="auth-form">
-                      <div class="auth-form__container">
-                          <div class="auth-form__header">
-                              <h3 class="auth-form__heading">Đăng kí</h3>
-                              <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng Nhập</span>
-                          </div>
-                          <div class="auth-form__form">
-                              <div class="auth-form__group">
-                                  <input id="email_dk" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
-                              </div>
-                              <div class="auth-form__group">
-                                  <input id="password1" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
-                              </div>
-                              <div class="auth-form__group">
-                                  <input id="password2" type="password" class="auth-form__input" placeholder="Nhập lại mật Khẩu">
-                              </div>
-                          </div>
-                          
-                          <div class="auth-form__aside">
-                              <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
-                                  Điều Khoản dịch vụ &
-                                  Chính sách bảo mật 
-                              </p>
-                          </div>
-                          <div class="auth-form__control">
-                              <button class="btn btn--primary" onclick="DangKiuser()">ĐĂNG KÍ</button>
-                          </div>
-      
-                      </div>
-                      <div class="auth-form__socials">
-                          <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
-                              <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
-                              <span class="auth-form__socials--title--fb">
-                                  kết nối với facebook
-                              </span>
-                          </a>
-                          <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
-                              <i class="auth-form__socials--google fa-brands fa-google"></i>
-                              <span class="auth-form__socials--title-gg">
-                                  Kết nối với Google 
-                              </span>
-                          </a>
-                      </div>
-      
-                  </div>
-              </div>
-          </div>     
-          <!-- form đăng nhập  -->
-          <!-- modal_login -->
-          <div class="modal modal_login">
-              <div class="modal__overlay " onclick="NoneModal()"></div>
-              <div class="modal__body">
-              
-                  <div class="auth-form">
-                      <div class="auth-form__container">
-                          <div class="auth-form__header">
-                              <h3 class="auth-form__heading">Đăng Nhập</h3>
-                              <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng kí</span>
-                          </div>
-                          <div class="auth-form__form">
-                              <div class="auth-form__group">
-                                  <input id="email_dn" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
-                              </div>
-                              <div class="auth-form__group">
-                                  <input id="password" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
-                              </div>
-                          </div>
-                          
-                          <div class="auth-form__aside">
-                              <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
-                                  Điều Khoản dịch vụ &
-                                  Chính sách bảo mật 
-                              </p>
-                          </div>
-                          <div class="auth-form__control">
-                              <button class="btn btn--primary" onclick="dangnhapuser()">Đăng nhập</button>
-                          </div>
+                                <div class="auth-form__group">
+                                    <input id="password1" type="password" class="auth-form__input"
+                                        placeholder="Nhập mật Khẩu">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="password2" type="password" class="auth-form__input"
+                                        placeholder="Nhập lại mật Khẩu">
+                                </div>
+                            </div>
 
-                      </div>
-                      <div class="auth-form__socials">
-                          <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
-                              <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
-                              <span class="auth-form__socials--title--fb">
-                                  kết nối với facebook
-                              </span>
-                          </a>
-                          <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
-                              <i class="auth-form__socials--google fa-brands fa-google"></i>
-                              <span class="auth-form__socials--title-gg">
-                                  Kết nối với Google 
-                              </span>
-                          </a>
-                      </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện
+                                    của trang blog về
+                                    Điều Khoản dịch vụ &
+                                    Chính sách bảo mật
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--primary" onclick="DangKiuser()">ĐĂNG KÍ</button>
+                            </div>
 
-                  </div>
-              </div>
-          </div>
-      
-      </header>
-  </div>
-    <!-- Phần Body -->
-    <div id="posts" class="posts body__container">
-        
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
+                                <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials--title--fb">
+                                    kết nối với facebook
+                                </span>
+                            </a>
+                            <a href="https://www.google.com/intl/vi/gmail/about/"
+                                class="btn auth-form__socials--gg btn--with--icon">
+                                <i class="auth-form__socials--google fa-brands fa-google"></i>
+                                <span class="auth-form__socials--title-gg">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- form đăng nhập  -->
+            <!-- modal_login -->
+            <div class="modal modal_login">
+                <div class="modal__overlay " onclick="NoneModal()"></div>
+                <div class="modal__body">
+
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn" onclick="ChangeModal()">Đăng kí</span>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input id="email_dn" name="email" type="text" class="auth-form__input"
+                                        placeholder="Nhập email của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input id="password" type="password" class="auth-form__input"
+                                        placeholder="Nhập mật Khẩu">
+                                </div>
+                            </div>
+
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện
+                                    của trang blog về
+                                    Điều Khoản dịch vụ &
+                                    Chính sách bảo mật
+                                </p>
+                            </div>
+                            <div class="auth-form__control">
+                                <button class="btn btn--primary" onclick="dangnhapuser()">Đăng nhập</button>
+                            </div>
+
+                        </div>
+                        <div class="auth-form__socials">
+                            <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
+                                <i class="auth-form__socials--facebook fa-brands fa-square-facebook"></i>
+                                <span class="auth-form__socials--title--fb">
+                                    kết nối với facebook
+                                </span>
+                            </a>
+                            <a href="https://www.google.com/intl/vi/gmail/about/"
+                                class="btn auth-form__socials--gg btn--with--icon">
+                                <i class="auth-form__socials--google fa-brands fa-google"></i>
+                                <span class="auth-form__socials--title-gg">
+                                    Kết nối với Google
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
     </div>
+    <!-- Phần Body -->
+    <div class="allpost-wrap body__container">
+        <div id="posts" class="posts body__container">
+
+        </div>
+
+        <div class="sidebar">
+            <form action="" class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-blog" type="text" placeholder="Search..." onkeyup="search()">
+            </form>
+
+            <div class="sidebar-categories">
+                <h1 class="sidebar-heading">Categories</h1>
+                <ul id="sidebar-categories">
+                    <li>
+                        <div>Product</div>
+                        <div id="cate-1">5</div>
+                    </li>
+                    <li>
+                        <div>Business</div>
+                        <div id="cate-2">7</div>
+                    </li>
+                    <li>
+                        <div>Life</div>
+                        <div id="cate-3">4</div>
+                    </li>
+                    <li>
+                        <div>Technology</div>
+                        <div id="cate-4">10</div>
+                    </li>
+                    <li>
+                        <div>Travel</div>
+                        <div id="cate-1">8</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="most-popular" class="most-popular">
+                <h1 class="sidebar-heading">Most Popular</h1>
+                <div class="most-popular-post">
+                    <div class="most-popular-post-img"><a href="#"><img src="../img/7_buoc_phat_trien_san_pham.jpg" alt=""></a></div>
+                    <div class="most-popular-post-desc">
+                        <p>Consectetur adipisicing elit. Sapiente, adipisci!</p>
+                        <div><i class="fa-regular fa-calendar-minus"></i>12 June 2023</div>
+                    </div>
+
+                </div>
+                <div class="most-popular-post">
+                    <div class="most-popular-post-img"><a href="#"><img src="../img/bien_long_hai.jpg" alt=""></a></div>
+                    <div class="most-popular-post-desc">
+                        <p>Consectetur adipisicing elit. Sapiente, adipisci!</p>
+                        <div><i class="fa-regular fa-calendar-minus"></i>12 June 2023</div>
+                    </div>
+
+                </div>
+                <div class="most-popular-post">
+                    <div class="most-popular-post-img"><a href="#"><img src="../img/bieu_do_luong_it.jpg" alt=""></a></div>
+                    <div class="most-popular-post-desc">
+                        <p>Consectetur adipisicing elit. Sapiente, adipisci!</p>
+                        <div><i class="fa-regular fa-calendar-minus"></i>12 June 2023</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 
@@ -179,10 +263,11 @@
                         <h2 class="footer__aside-title">Quick link</h2>
                         <div class="footer__width-content">
                             <div class="footer__nav-wrap">
-                                <ul class="footer__nav">   
+                                <ul class="footer__nav">
                                     <li class="footer__home"><a href="../HTML/index.html">Home</a></li>
                                     <li class="footer__all-post"><a href="../HTML/all-post.html">All Posts</a></li>
-                                    <li class="footer__tags--create"><a href="../HTML/categories.html">Categories</a></li>
+                                    <li class="footer__tags--create"><a href="../HTML/categories.html">Categories</a>
+                                    </li>
                                     <li class="footer__about"><a href="../HTML/about.html">About</a></li>
                                     <li class="footer__ket-noi"><a href="../HTML/contact">contact</a></li>
                                 </ul>
@@ -223,19 +308,24 @@
         <div class="footer__end">
             <div class="footer__end-top">
                 <div class="footer__end-address">
-                    <p><a href="#">BLOG.COM  TỰ DO ĐỌC HIỂU</a> © 2023. All rights reserved.</p>
+                    <p><a href="#">BLOG.COM TỰ DO ĐỌC HIỂU</a> © 2023. All rights reserved.</p>
                 </div>
                 <div class="footer__end-connet">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100027817099772"><i class="footer__end-facebook fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/trinhdat041004/"><i class="footer__end-instagram fa-brands fa-square-instagram"></i></a>
-                    <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="footer__end-twitter fa-brands fa-twitter"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/@duonghuuthanh"><i class="footer__end-youtube fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100027817099772"><i
+                            class="footer__end-facebook fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/trinhdat041004/"><i
+                            class="footer__end-instagram fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i
+                            class="footer__end-twitter fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@duonghuuthanh"><i
+                            class="footer__end-youtube fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <div class="footer__end-bottom"></div>
         </div>
     </footer>
-    
+
     <script src="../Javascript/all-posts.js"></script>
 </body>
+
 </html>
