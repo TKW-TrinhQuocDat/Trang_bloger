@@ -106,4 +106,23 @@ html{
     z-index: 99;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+}
+/* go to top */
+div.gototop {
+    position: fixed;
+    background-color: var(--blue-color--);
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+    display: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+div.gototop a {
+    display: block;
+    padding: 17px 20px;
+    color: var(--border-color--);
+    font-size: 2rem;
 }

@@ -119,13 +119,26 @@ function scrolled(){
     var menu = document.querySelector('.app');
         window.addEventListener("scroll", function() {
             var scrollPosition = window.scrollY;
+            var gototop = document.getElementById("gototop");
             if (scrollPosition > 150) {
               menu.classList.add("fixed");
+              gototop.style.display = 'block';
             } 
-            if(scrollPosition=== 0)
+            if(scrollPosition=== 0){
+                gototop.style.display = 'none';
                 menu.classList.remove("fixed");
+            }
     });
 }
 window.onload = function(){
     scrolled();
+}
+function goToTop() {
+    var timer = setInterval(function() {
+        document.documentElement.scrollTop -= 10;
+
+        if(document.documentElement.scrollTop <= 0) {
+            clearInterval(timer);
+        }
+    }, 1);
 }

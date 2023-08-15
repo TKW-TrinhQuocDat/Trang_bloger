@@ -3,7 +3,9 @@
     font-weight: 800;
     font-size: 50px;
 }
-
+.tag_header > h1{
+    color: white;
+}
 .tags-container {
     background-color: var(--body--);
     width: 90%;
