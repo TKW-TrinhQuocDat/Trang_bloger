@@ -39,7 +39,7 @@ div.post__content{
 }
 div.post__content >h1{
     font-size: 3rem;
-    line-height: 3,2rem;
+    line-height: 3.2rem;
     font-weight: 600;
     color: var(--text-color--);
 }
@@ -76,4 +76,8 @@ ul > li{
     font-size: 2rem;
     line-height: 3rem;
     color: var(--mean-color--);
+}
+div.post__content > p > img{
+    height: 100% !important;
+    width: 100% !important;
 }
