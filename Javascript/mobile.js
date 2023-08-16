@@ -11,7 +11,7 @@ function xuatmenu(data){
     let list = document.querySelector(".header__navbar--list");
     html =`<li class=" exit header__navbar--list-item"><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>`;
     for( let m of data){
-        html += `<li class="header__navbar--list-item"><a href="#">${m.modal}</a></li>`
+        html += `<li class="header__navbar--list-item"><a href="${m.link}">${m.modal}</a></li>`
     }
     list.innerHTML = html;
     list.classList.remove("none");

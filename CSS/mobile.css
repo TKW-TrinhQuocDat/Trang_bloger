@@ -102,6 +102,9 @@ div.widget__content > ul > li > a{
     position: static;
     margin-bottom: 36px;
 }
+.gobal__header{
+    width: 100%;
+}
 .gobal__header-image{
     width: 80%;
 }
@@ -162,7 +165,7 @@ div.socal_network ul > li > a{
     font-size: 3.3rem;
     line-height: 3.8rem;
 }
-div.post__content > p, ul > li{
+div.post__content > p, ul > li,div.about p, div.about > ul > li{
     font-size: 1.8rem;
     line-height: 2.5rem;
 }
@@ -171,4 +174,22 @@ div.contact > ul > li> a, div.contact > ul > li{
 }
 div.contact >h1{
     font-size: 5rem;
+}
+div.tag{
+    height: 100%;
+}
+.gobal__header-title > h1{
+    margin: 12px 4px;
+}
+.gobal{
+    padding: 50px 12px;
+}
+.d-flex.margin{
+    flex-wrap: wrap;
+}
+.gobal__header-title,.gobal__header-inner{
+    width: 100%;
+}
+.gobal__header-inner >h1{
+    margin: 0;
 }
