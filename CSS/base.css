@@ -13,6 +13,12 @@
     --lh-md: 80px;
     --lh-sm: 38px;
 }
+.light-mode{
+    --body--: white;
+    --header-menu--: white;
+    --text-color--: black;
+}
+
 .girt{
   
     width: 1200px;

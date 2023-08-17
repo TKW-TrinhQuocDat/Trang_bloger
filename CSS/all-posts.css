@@ -1,6 +1,6 @@
 body {
     color: var(--text-color--);
-    background-color: #262A2E;
+    background-color: var(--body--);
     box-sizing: border-box;
 }
 
@@ -72,6 +72,12 @@ a {
     font-size: 1.6rem;
     line-height: 1.6rem;
     border-bottom: 1px solid white;
+    transition: transform .3s;
+}
+
+.sidebar-categories ul li:hover{
+    transform: scale(1.05);
+    background-color: var(--blue-color--);
 }
 
 .sidebar-categories ul li div:first-child {
@@ -80,7 +86,14 @@ a {
 /* most popular--------------------------- */
 .most-popular-post{
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    transition: transform .3s;
+}
+
+.most-popular-post:hover {
+    box-shadow: 1px 1px 10px var(--blue-color--);
+    transform: scale(1.03);
 }
 
 .most-popular-post-img{
@@ -106,24 +119,36 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
-    border-bottom: 1px solid white;
 }
 
-.most-popular-post-desc p {
-    margin-top: 0;
-    font-size: 1.2rem;
+
+.most-popular-post-desc a {
+    margin: 5px 0 5px;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.6rem;
 }
 
+.most-popular-post-desc > div {
+    color: var(--text-color--);
+    font-size: 1rem;
+    opacity: .6;
+}
+
 .post {
-    display: flex;
+    display: none;
     position: relative;
     width: 90%;
     margin: 20px auto;
     padding: 2rem;
     border-radius: 16px;
     background-color: var(--header-menu--);
+    transition: transform .3s;
+}
+
+.post:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px var(--blue-color--);
 }
 
 .post-img {
@@ -156,9 +181,14 @@ a {
     width: fit-content;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #262A2E;
+    background-color: var(--body--);
     font-size: 1.2rem;
     border-radius: 16px;
+    transition: .3s;
+}
+
+.post-tag a:hover {
+    background-color: var(--blue-color--);
 }
 
 .post-title a{
@@ -185,18 +215,63 @@ a {
     right: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     opacity: .5;
 }
 
-.subcontent > div {
+.subcontent  div:first-child {
     margin-right: 20px;
+}
+
+.subcontent > div:not(:first-child){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.subcontent > div:not(:first-child):hover{
+    background-color: var(--blue-color--);
+    cursor: pointer;
+}
+
+.active-love {
+    background-color: var(--blue-color--);
+    cursor: pointer;
 }
 
 .subcontent i{
     font-size: 1.3rem;
     margin-right: 5px;
     cursor: pointer;;
+}
+
+
+#load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    background-color: var(--header-menu--);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#load-more:hover{
+    background-color: var(--blue-color--);
+}
+
+#load-more span {
+    color: var(--text-color--);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 
@@ -231,5 +306,8 @@ a {
     }
     .posts {
         margin-top: 50px;
+    }
+    .post:hover{
+        transform: scale(1.02);
     }
 }

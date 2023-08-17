@@ -105,6 +105,12 @@
     align-items: center;
     justify-content: flex-end;
 }
+.header__end div:first-child{
+    font-size: 2.3rem;
+    margin-right: 15px;
+    color: var(--text-color--);
+
+}
 .header__end-seach{
     font-size: 2rem;
 }
@@ -712,3 +718,4 @@ div.contact > ul > li> a, div.contact > ul > li{
 .next-modal{
     display: none;
 }
+

@@ -130,9 +130,22 @@ function scrolled(){
             }
     });
 }
+var mode = localStorage.getItem("LightMode")
 window.onload = function(){
     scrolled();
+    
+
+    if(mode === 'light'){
+     var x = document.querySelector("body")
+      x.classList.add("light-mode")
+    var moon = document.getElementById("light-theme")
+
+      moon.classList.remove("fa-sun")
+        moon.classList.add("fa-moon")
+
 }
+}
+
 function goToTop() {
     var timer = setInterval(function() {
         document.documentElement.scrollTop -= 10;
@@ -142,3 +155,20 @@ function goToTop() {
         }
     }, 1);
 }
+
+
+// console.log('hello')
+
+function light() {
+    document.body.classList.toggle("light-mode")
+    var moon = document.getElementById("light-theme")
+    moon.classList.toggle("fa-moon")
+    moon.classList.toggle("fa-sun")
+    if(document.body.classList.contains("light-mode")){
+        localStorage.setItem("LightMode", "light")
+    }
+    else{
+        localStorage.setItem("LightMode", "dark")
+
+    }
+} 
