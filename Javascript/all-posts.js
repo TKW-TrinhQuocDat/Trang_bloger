@@ -4,7 +4,7 @@ function createPost() {
         .then((data) => {
             var output = ''
             var cntPost = ''
-            var mostPopular = '<h1 class="sidebar-heading">Most Popular</h1>'
+            var mostPopular = '<h1 class="sidebar-heading">Recent Posts</h1>'
             var mostPopularLimit = 0
             // console.log(data)
             data.forEach(tag => {
@@ -57,13 +57,13 @@ function createPost() {
                 </li>
             `
 
+        
                 
             })
             output += `<div id="load-more"><span>Load more</span></div>`
             document.getElementById("posts").innerHTML = output
             document.getElementById("sidebar-categories").innerHTML = cntPost
             document.getElementById("most-popular").innerHTML = mostPopular
-
 
             var loadMore = document.getElementById("load-more")
             var boxes = [...document.querySelectorAll(".post")]

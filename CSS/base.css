@@ -15,7 +15,7 @@
 }
 .light-mode{
     --body--: white;
-    --header-menu--: white;
+    --header-menu--: #f6f6f6;
     --text-color--: black;
 }
 
