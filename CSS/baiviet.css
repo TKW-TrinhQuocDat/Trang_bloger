@@ -81,3 +81,9 @@ div.post__content > p > img{
     height: 100% !important;
     width: 100% !important;
 }
+.list-item--menu{
+    top: 218% !important;
+}
+.list-item-app-add a{
+    padding: 2px 8px;
+}

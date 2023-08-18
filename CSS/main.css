@@ -32,7 +32,7 @@
 
 .list-item--menu{
     position: absolute;
-    top: 360%;
+    top: 285%;
     right: -18px;
     background-color: var(--header-menu--);
     opacity: 0.8;
@@ -113,6 +113,7 @@
 }
 .header__end-seach{
     font-size: 2rem;
+    display: none;
 }
 .header__end-seach a,.header__end--sign-in a{
     color: var(--text-color--);

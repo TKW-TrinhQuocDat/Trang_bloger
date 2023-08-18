@@ -312,3 +312,6 @@ a {
         transform: scale(1.02);
     }
 }
+body > div.allpost-wrap.body__container{
+    margin-top: 36px;
+}

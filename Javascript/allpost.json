@@ -229,7 +229,7 @@
     },
     {
         "id": 5,
-        "linktag": "../HTML/travel.html",
+        "linktag": "../HTML/traval.html",
         "tag": "Travel",
         "img":"../img/travel.jpg",
         "desc":"This blog aims to help you understand and land that product role of your dreams. It shares insights on salaries, in-demand product manager skills, and job descriptions. This blog has advice on how to create a CV that gets attention",
@@ -288,12 +288,12 @@
         "id": 6,
         "linktag": "../HTML/problem.html",
         "tag": "Problem",
-        "img":"../img/Life.jpg",
+        "img":"../img/problem.jpg",
         "desc":"This blog aims to help you understand and land that product role of your dreams. It shares insights on salaries, in-demand product manager skills, and job descriptions. This blog has advice on how to create a CV that gets attention",
         "content":[
             {
                 "id": 1,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_1.jpg",
                 "time": "14 July 2023",
                 "title": "Năm vấn đề về giảng viên đại học",
                 "desc": "Với giáo dục đại học (GDÐH), đối tượng học là người lao động, là những cử nhân, kỹ sư tương lai. Họ chính là lực lượng bổ sung trọng yếu hằng năm cho nguồn nhân lực chất lượng cao nước nhà, là nhân tố động lực phát triển của nền kinh tế đất nước.",
@@ -301,7 +301,7 @@
             },
             {
                 "id": 2,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_2.jpg",
                 "time": "13 July 2023",
                 "title": "Ô nhiễm môi trường nơi trường học",
                 "desc": "Vấn đề rác thải là vấn đề nan giải của toàn xã hội, trong đó có khu vực trường học, nơi tập trung rất đông những bạn trẻ được xem là chủ nhân tương lai của đất nước.Việc bảo vệ vệ sinh môi trường đang là một vấn đề rất bức thiết trong cuộc sống chung của chúng ta hiện nay. Trong môi trường học đường thì lâu nay sự ô nhiễm vẫn tồn tại nhưng lại bị mọi người bỏ quên, và chính học sinh, sinh viên những người được xem là chủ nhân tương lai của đất nước cũng thể hiện ra ý thức rất kém trong việc giữ gìn vệ sinh trong môi trường lớp học. Từ các cấp mẫu giáo, tiểu học cho tới đại học, các em học sinh, sinh viên luôn được giáo dục rất kỹ lưỡng về ý thức bảo vệ môi trường sống xanh - sạch đẹp ở mọi nơi, mọi chỗ.",
@@ -309,7 +309,7 @@
             },
             {
                 "id": 3,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_3.jpg",
                 "time": "12 July 2023",
                 "title": "Những phát minh vĩ đại của Nikola Tesla",
                 "desc": "Tesla từng nghĩ đến ý tưởng khai thác nguồn năng lượng miễn phí đến từ những hạt nguyên tử, các loài tia đầy rẫy trong vũ trụ. Đây là ý tưởng bị coi là khoa học giả tưởng với hầu hết các nhà nghiên cứu vì nó không thực tế.",
@@ -317,7 +317,7 @@
             },
             {
                 "id": 4,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_4.jpg",
                 "time": "10 July 2023",
                 "title": "Tình trạng sống thử của sinh viên hiện nay",
                 "desc": "Hiện tượng sống thử thường xuất hiện nhiều ở thành phố phát triển và ở độ tuổi sinh viên. Hiện tượng sống thử của sinh viên hiện nay rất phổ biến, không thể thống kê được số lượng những sinh viên sống thử trước khi kết hôn. Lý do dẫn đến tình trạng sống thử của sinh viên hiện nay một phần là do tâm lý xã hội đã khá thoải mái về quan hệ tình cảm và hôn nhân. Nhiều người trẻ nghĩ thoáng trong vấn đề sống chung, hơn nữa còn có thể có những lợi ích từ việc sống thử. Ví dụ như sinh viên ở chung với nhau có thể tiết kiệm được một khoảng sinh hoạt phí và phí thuê nhà. Hơn nữa, xuất phát từ sự tò mò về quan hệ hôn nhân của sinh viên mà những người này lựa chọn sống thử.",
@@ -325,7 +325,7 @@
             },
             {
                 "id": 5,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_5.jpg",
                 "time": "9 July 2023",
                 "title": "Vấn đề đi làm thêm của sinh viên hiện nay",
                 "desc": "Xét về nguồn nhân lực, sinh viên được coi là lực lượng lao động “không chính thức” dào dồi, có sức khỏe tốt và có kiến thức để tham gia vào bất kỳ công việc nào. Chính vì thế, trong một số lĩnh vực nghề nghiệp, các nhà tuyển dụng ưu tiên tuyển nhân viên vào làm việc thay vì các nhân sự chính thức.",
@@ -333,7 +333,7 @@
             },
             {
                 "id": 6,
-                "img": "../img/Life_1.jpg",
+                "img": "../img/problem_6.jpg",
                 "time": "8 July 2023",
                 "title": "Những sai lầm mà sinh viên năm nhất thường hay mắc phải.",
                 "desc": "Sau một đêm tiệc tùng, ta khó có thể kìm được ham muốn trốn học. Quả là đơn giản khi chỉ cần lên mạng xã hội để xin ghi chú về bài giảng và bài tập. Nhưng, ngược lại, bạn cũng sẽ không được trải nghiệm các giờ học tập trên lớp, lắng nghe những lời giảng sâu sắc của các giáo sư và tham gia thảo luận.",

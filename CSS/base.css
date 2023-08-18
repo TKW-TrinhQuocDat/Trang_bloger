@@ -132,3 +132,7 @@ div.gototop a {
     color: var(--border-color--);
     font-size: 2rem;
 }
+.btn.btn--primary{
+    background-color: var(--blue-color--) !important;
+    border-radius: 10px;
+}

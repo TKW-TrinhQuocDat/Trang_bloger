@@ -64,13 +64,13 @@ function randerTags(post, x){
         }
         htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
         <div class="tag__image">
-            <a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_${x}/${post.content[i].link}">
+            <a href=".._${x}/${post.content[i].link}">
                 <img src="../img/${x}_${i+1}.jpg" alt="Life">
             </a>
         </div>
         <div class="content">
             <div class="tag__title">
-                <h1><a href="https://tkw-trinhquocdat.github.io/Trang_bloger/HTML_${x}/${post.content[i].link}">${post.content[i].title}</a></h1>
+                <h1><a href="../HTML_${x}/${post.content[i].link}">${post.content[i].title}</a></h1>
             </div>
             <div class="tag__discription">
                 <span>${post.content[i].discription}</span>
