@@ -58,7 +58,7 @@ div.tag{
     position: absolute;
     width: 30%;
     padding: 0;
-    background-color: var(--border-color--);
+    background-color: var(--header-menu--);
     border-radius: 36px;
     overflow: hidden;
 }
