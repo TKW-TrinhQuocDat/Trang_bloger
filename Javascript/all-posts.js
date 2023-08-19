@@ -6,6 +6,7 @@ function createPost() {
             var cntPost = ''
             var mostPopular = '<h1 class="sidebar-heading">Recent Posts</h1>'
             var mostPopularLimit = 0
+            
             // console.log(data)
             data.forEach(tag => {
                 // console.log(post.content)
@@ -57,6 +58,7 @@ function createPost() {
                 </li>
             `
 
+          
         
                 
             })
@@ -98,11 +100,11 @@ function like(id) {
     active.classList.toggle("active-love")
     if (active.classList.contains("active-love")) {
         cnt++
-        active.innerText = cnt
+        active.innerHTML = `<i class="fa-solid fa-heart"></i>${cnt}`
     }
     else {
         cnt--
-        active.innerText = cnt
+        active.innerHTML = `<i class="fa-solid fa-heart"></i>${cnt}`
     }
 }
 
@@ -125,6 +127,9 @@ function search() {
     }
 }
 
+
+var x = document.querySelector('.slider')
+console.log(x)
 
 
 

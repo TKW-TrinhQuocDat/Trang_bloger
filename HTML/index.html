@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
     <meta name="keywords" content="trang blog ca nhan, Technology, Life, reader">
     <title>Trang blog về Công nghệ </title>
     <link href="../img/blog_logo.png" rel="shortcut icon">
-    <link rel="stylesheet" href="../CSS/base.css"/>
-    <link rel="stylesheet" href="../CSS/main.css"/>
+    <link rel="stylesheet" href="../CSS/base.css" />
+    <link rel="stylesheet" href="../CSS/main.css" />
     <link rel="stylesheet" href="../CSS/categories.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="../Javascript/product.js"></script>
     <link rel="stylesheet" href="../CSS/mobile.css" media="screen and (max-width: 500px)">
-    <script src="../Javascript/mobile.js" ></script>
+    <script src="../Javascript/mobile.js"></script>
     <script src="../Javascript/categories.js"></script>
 </head>
+
 <body>
     <!-- header menu -->
     <div class="app">
@@ -23,23 +27,27 @@
             <div class="girt ">
                 <div class="alin-item d-flex">
                     <div class="header__logo">
-                        <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog"/></a>
+                        <a href="#"><img class="header__logo-img" src="../img/blog_logo.png" alt="Logo Blog" /></a>
                     </div>
                     <div class="header__navbar-menu d-flex">
                         <nav class="header__navbar  ">
                             <ul class="header__navbar--list d-flex">
                                 <li class="header__navbar--list-item"><a href="../HTML/index.html">Home</a></li>
                                 <li class="header__navbar--list-item"><a href="../HTML/all-post.html">All Posts</a></li>
-                                <li class="header__navbar--list-item"><a href="../HTML/categories.html">Categories</a></li>
+                                <li class="header__navbar--list-item"><a href="../HTML/categories.html">Categories</a>
+                                </li>
                                 <li class="header__navbar--list-item"><a href="../HTML/about.html">About</a></li>
                                 <li class="header__navbar--list-item"><a href="../HTML/contact.html">contact</a></li>
                                 <li class="dot ">
                                     <span class="list-item">. . .</span>
                                     <div class="list-item--menu">
                                         <ul class="list-item-app">
-                                            <li class="list-item-app-add"><a href="../HTML/technology.html">Technology</a></li>
-                                            <li class="list-item-app-add"><a href="../HTML/business.html">Business</a></li>
-                                            <li class="list-item-app-add"><a href="../HTML/build_the_product.html">Buil Product</a></li>
+                                            <li class="list-item-app-add"><a
+                                                    href="../HTML/technology.html">Technology</a></li>
+                                            <li class="list-item-app-add"><a href="../HTML/business.html">Business</a>
+                                            </li>
+                                            <li class="list-item-app-add"><a href="../HTML/build_the_product.html">Buil
+                                                    Product</a></li>
                                             <li class="list-item-app-add"><a href="../HTML/traval.html">Travel</a></li>
                                         </ul>
 
@@ -50,15 +58,16 @@
                     </div>
                     <div class="header__end d-flex">
                         <div><i id="light-theme" onclick="light()" class="fa-solid fa-sun "></i></div>
-                        
+
                         <div class="header__end--sign-in" onclick="login()">
-                            <div><a href="#">Sign In</a></div></div>
+                            <div><a href="#">Sign In</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div onclick="startmenu()" class="next-modal"><i class="fa-solid fa-forward"></i></div>
-                <!-- form đằng kí  -->
-            <div class="modal modal_register" >
+            <!-- form đằng kí  -->
+            <div class="modal modal_register">
                 <div class="modal__overlay" onclick="NoneModal()"></div>
                 <div class="modal__body">
                     <div class="auth-form">
@@ -69,26 +78,30 @@
                             </div>
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
-                                    <input id="email_dk" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                    <input id="email_dk" name="email" type="text" class="auth-form__input"
+                                        placeholder="Nhập email của bạn">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input id="password1" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
+                                    <input id="password1" type="password" class="auth-form__input"
+                                        placeholder="Nhập mật Khẩu">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input id="password2" type="password" class="auth-form__input" placeholder="Nhập lại mật Khẩu">
+                                    <input id="password2" type="password" class="auth-form__input"
+                                        placeholder="Nhập lại mật Khẩu">
                                 </div>
                             </div>
-                            
+
                             <div class="auth-form__aside">
-                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện
+                                    của trang blog về
                                     Điều Khoản dịch vụ &
-                                    Chính sách bảo mật 
+                                    Chính sách bảo mật
                                 </p>
                             </div>
                             <div class="auth-form__control">
                                 <button class="btn btn--primary" onclick="DangKiuser()">ĐĂNG KÍ</button>
                             </div>
-        
+
                         </div>
                         <div class="auth-form__socials">
                             <a href="https://vi-vn.facebook.com/" class="btn auth-form__socials--fb btn--with--icon">
@@ -97,24 +110,25 @@
                                     kết nối với facebook
                                 </span>
                             </a>
-                            <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
+                            <a href="https://www.google.com/intl/vi/gmail/about/"
+                                class="btn auth-form__socials--gg btn--with--icon">
                                 <i class="auth-form__socials--google fa-brands fa-google"></i>
                                 <span class="auth-form__socials--title-gg">
-                                    Kết nối với Google 
+                                    Kết nối với Google
                                 </span>
                             </a>
                         </div>
-        
+
                     </div>
                 </div>
-            </div>     
-               
+            </div>
+
             <!-- form đăng nhập  -->
             <!-- modal_login -->
             <div class="modal modal_login">
                 <div class="modal__overlay " onclick="NoneModal()"></div>
                 <div class="modal__body">
-                
+
                     <div class="auth-form">
                         <div class="auth-form__container">
                             <div class="auth-form__header">
@@ -123,17 +137,20 @@
                             </div>
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
-                                    <input id="email_dn" name="email" type="text" class="auth-form__input" placeholder="Nhập email của bạn">
+                                    <input id="email_dn" name="email" type="text" class="auth-form__input"
+                                        placeholder="Nhập email của bạn">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input id="password" type="password" class="auth-form__input" placeholder="Nhập mật Khẩu">
+                                    <input id="password" type="password" class="auth-form__input"
+                                        placeholder="Nhập mật Khẩu">
                                 </div>
                             </div>
-                            
+
                             <div class="auth-form__aside">
-                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện của trang blog về 
+                                <p class="auth-form__policy-text">Bằng việc đăng kí bạn đã đồng ý với một số điều kiện
+                                    của trang blog về
                                     Điều Khoản dịch vụ &
-                                    Chính sách bảo mật 
+                                    Chính sách bảo mật
                                 </p>
                             </div>
                             <div class="auth-form__control">
@@ -148,10 +165,11 @@
                                     kết nối với facebook
                                 </span>
                             </a>
-                            <a href="https://www.google.com/intl/vi/gmail/about/" class="btn auth-form__socials--gg btn--with--icon">
+                            <a href="https://www.google.com/intl/vi/gmail/about/"
+                                class="btn auth-form__socials--gg btn--with--icon">
                                 <i class="auth-form__socials--google fa-brands fa-google"></i>
                                 <span class="auth-form__socials--title-gg">
-                                    Kết nối với Google 
+                                    Kết nối với Google
                                 </span>
                             </a>
                         </div>
@@ -159,10 +177,34 @@
                     </div>
                 </div>
             </div>
-        
+
         </header>
     </div>
     <!-- Phần Body -->
+    <!-- Slider -->
+    <div class="slider">
+        <div id="slider-list" class="slider-list">
+            
+        </div>
+
+        <div class="slider-btn">
+            <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <ul class="slider-dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <!-- Slider -->
+
+
     <section class="body__hero-baner">
         <div class="body__container">
             <h1 class="body__container-title">Lan tỏa tinh thần tự đọc về công nghệ đến với nhiều người hơn nữa !</h1>
@@ -195,143 +237,25 @@
     <!-- Categories -->
     <div class="body__container">
         <div id="categories" class="categories">
-            
+
         </div>
     </div>
 
     <section class="body__top-tags">
         <div class="tags__container">
-            <div class="tags__container-row">
-                <div class="popular__tags">
-                    <div class="tag__title">
-                        <h5>Popular Tags</h5>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="./technology.html"><img src="https://image.nhandan.vn/Uploaded/2023/athlrainagbna/2023_03_08/tri-tue-nhan-tao-ai-2-3436.jpg" alt="Technology"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="./technology.html">
-                                <h5>Technology</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="./build_the_product.html"><img src="https://yourdigitalaid.com/wp-content/uploads/2022/03/smart-business-man-writing-the-word-product-on-the-2021-09-04-10-31-54-utc.jpg" alt="Build the Product"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="./build_the_product.html">
-                                <h5>Build the Product</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="./business.html"><img src="https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/overhead-view-of-business-strategy-meeting.jpg&w=1200&h=630" alt="Business"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="./business.html">
-                                <h5>Business</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="./life.html"><img src="https://upload.wikimedia.org/wikipedia/en/0/07/Lifetitle.jpg" alt="Life"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="./life.html">
-                                <h5>Life</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="../HTML/problem.html"><img src="../img/problem.jpg" alt="English"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="../HTML/problem.html">
-                                <h5>Problem and idea</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tags__thurmb cursor-pointer">
-                        <a href="./traval.html"><img src="../img/travel.jpg" alt="Tachnology"></a>
-                    </div>
-                    <div class="tags__carst">
-                        <div class="tags__carst-meta cursor-pointer">
-                            <a href="./traval.html">
-                                <h5>Travel</h5>
-                                <p>10 posts</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="tags__url cursor-pointer">
-                        <a href="../HTML/categories.html">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="popular__tags">
-                    <div class="tag__title cursor-pointer d-flex">
-                        <a href="../HTML/categories.html" class="tag__footer">
-                            <h5>View All</h5>
-                        </a>
-                        <a href="../HTML/categories.html" class="tags_footer-icon">
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </a>
-                    </div>
-                </div>
+            <div id="tags__container-row" class="tags__container-row">
+
             </div>
         </div>
     </section>
+
+
+
+
     <div class="gototop" id="gototop">
         <a href="javascript:;" onclick="goToTop()"> <i class="fa-solid fa-arrow-up"></i> </a>
-     </div>
-     <a href=""></a>
+    </div>
+    <a href=""></a>
 
     <!-- Phần Footer -->
     <footer class="footer-stite">
@@ -343,10 +267,11 @@
                         <h2 class="footer__aside-title">Quick link</h2>
                         <div class="footer__width-content">
                             <div class="footer__nav-wrap">
-                                <ul class="footer__nav">   
+                                <ul class="footer__nav">
                                     <li class="footer__home"><a href="../HTML/index.html">Home</a></li>
                                     <li class="footer__all-post"><a href="../HTML/all-post.html">All Posts</a></li>
-                                    <li class="footer__tags--create"><a href="../HTML/categories.html">Categories</a></li>
+                                    <li class="footer__tags--create"><a href="../HTML/categories.html">Categories</a>
+                                    </li>
                                     <li class="footer__about"><a href="../HTML/about.html">About</a></li>
                                     <li class="footer__ket-noi"><a href="../HTML/contact">contact</a></li>
                                 </ul>
@@ -387,18 +312,23 @@
         <div class="footer__end">
             <div class="footer__end-top">
                 <div class="footer__end-address">
-                    <p><a href="#">BLOG.COM  TỰ DO ĐỌC HIỂU</a> © 2023. All rights reserved.</p>
+                    <p><a href="#">BLOG.COM TỰ DO ĐỌC HIỂU</a> © 2023. All rights reserved.</p>
                 </div>
                 <div class="footer__end-connet">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100027817099772"><i class="footer__end-facebook fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/trinhdat041004/"><i class="footer__end-instagram fa-brands fa-square-instagram"></i></a>
-                    <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="footer__end-twitter fa-brands fa-twitter"></i></a>
-                    <a target="_blank" href="https://www.youtube.com/@duonghuuthanh"><i class="footer__end-youtube fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100027817099772"><i
+                            class="footer__end-facebook fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/trinhdat041004/"><i
+                            class="footer__end-instagram fa-brands fa-square-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i
+                            class="footer__end-twitter fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@duonghuuthanh"><i
+                            class="footer__end-youtube fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <div class="footer__end-bottom"></div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
