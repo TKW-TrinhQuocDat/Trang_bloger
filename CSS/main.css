@@ -259,7 +259,7 @@ div.footer__end-connet > a >i{
     color: #ff0e3e;
 }
 .footer__end-twitter{
-    color: white;
+    color: var(--blue-color--);
 }
 .footer__end-youtube{
     color: #fe0000;
