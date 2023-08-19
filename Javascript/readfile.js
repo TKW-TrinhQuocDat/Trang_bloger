@@ -64,7 +64,7 @@ function randerTags(post, x){
         }
         htmls += `<div class="tag" style="left: ${t++*33.33333}%; top: ${600*dem}px">
         <div class="tag__image">
-            <a href=".._${x}/${post.content[i].link}">
+            <a href="../HTML_${x}/${post.content[i].link}">
                 <img src="../img/${x}_${i+1}.jpg" alt="Life">
             </a>
         </div>
