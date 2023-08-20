@@ -137,9 +137,11 @@ document.getElementById("exit-btn").onclick = () => {
 }
 
 
-    function cmt(id) {
-        document.querySelector(".cmt-container").style.display = 'flex'
+function cmt(id) {
         var cmt = localStorage.getItem('user comments') ? JSON.parse(localStorage.getItem('user comments')) : []
+        console.log(document.querySelector(".cmt-container"))
+        document.querySelector(".cmt-container").style.display = 'flex'
+        document.querySelector(".cmt-body").style.display = 'none'
         var cmt_input = document.getElementById("user-cmt")
         var flag = false
         var output = ''
@@ -154,16 +156,17 @@ document.getElementById("exit-btn").onclick = () => {
                         output += `
                         <div class="user-cmt">
                         <div class="cmt-img">
-                            <img src="../img/avatar_an_danh.jpg" alt="user">
+                        <img src="../img/avatar_an_danh.jpg" alt="user">
                         </div>
                         <div class="user-cmt-content">
-                            <h1>User</h1>
-                            <p>${post}</p>
+                        <h1>User</h1>
+                        <p>${post}</p>
                         </div>
-                    </div>
+                        </div>
                         `
                     })
                     document.getElementById("cmt-body").innerHTML = output
+                    document.querySelector(".cmt-body").style.display = 'flex'
                 }
                 
             })
@@ -186,10 +189,11 @@ document.getElementById("exit-btn").onclick = () => {
                     </div>
                         `
                         document.getElementById("cmt-body").innerHTML = output
-                            }
-                        })
-                        clearinput()
-                        updateCmtNum()
+                    }
+                })
+                clearinput()
+                updateCmtNum()
+                document.querySelector(".cmt-body").style.display = 'flex'
                 }
             }
             else{
@@ -220,6 +224,7 @@ document.getElementById("exit-btn").onclick = () => {
                         })
                         clearinput()
                         updateCmtNum()
+                        document.querySelector(".cmt-body").style.display = 'flex'
                 }
             }
         }
@@ -251,6 +256,7 @@ document.getElementById("exit-btn").onclick = () => {
                     })
                     clearinput()
                     updateCmtNum()
+                    document.querySelector(".cmt-body").style.display = 'flex'
             }
         }
     
