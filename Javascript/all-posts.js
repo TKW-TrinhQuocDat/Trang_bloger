@@ -6,7 +6,6 @@ function createPost() {
             var cntPost = ''
             var mostPopular = '<h1 class="sidebar-heading">Recent Posts</h1>'
             var mostPopularLimit = 0
-            
             // console.log(data)
             data.forEach(tag => {
                 // console.log(post.content)
@@ -25,14 +24,13 @@ function createPost() {
                     <div class="subcontent">
                         <div><i class="fa-regular fa-calendar-minus"></i>${post.time}</div>
                         <div onclick="like('${tag.tag}-like-${post.id}')" id="${tag.tag}-like-${post.id}"><i class="fa-solid fa-heart"></i>99</div>
-                        <div><i class="fa-solid fa-comment-dots"></i>0</div>
+                        <div onclick="cmt('${tag.tag}-cmt-${post.id}')" id="${tag.tag}-cmt-${post.id}"><i class="fa-solid fa-comment-dots"></i>0</div>
                         <div><i class="fa-solid fa-share-nodes"></i></div>
                     </div>
                 </div>
                 </div>
             </div>
                 `
-
                 
                 if(mostPopularLimit < 3){
                     mostPopular += `
@@ -59,7 +57,7 @@ function createPost() {
             `
 
           
-        
+                
                 
             })
             output += `<div id="load-more"><span>Load more</span></div>`
@@ -86,14 +84,21 @@ function createPost() {
                 }
                 currentPost += 5
             }
-
-
+            
+            
+            
+            updateCmtNum()  
 
         })
 }
 
 createPost()
-
+function updateCmtNum() {
+    var cmt_num = JSON.parse(localStorage.getItem('user comments'))
+    cmt_num.forEach(cmt => {
+        document.getElementById(cmt.id).innerHTML = `<i class="fa-solid fa-comment-dots"></i>${cmt.comment.length}`
+    })
+}
 function like(id) {
     var active = document.getElementById(id)
     var cnt = parseInt(document.getElementById(id).textContent)
@@ -127,9 +132,143 @@ function search() {
     }
 }
 
+document.getElementById("exit-btn").onclick = () => {
+    document.querySelector(".cmt-container").style.display = 'none'
+}
 
-var x = document.querySelector('.slider')
-console.log(x)
+
+    function cmt(id) {
+        document.querySelector(".cmt-container").style.display = 'flex'
+        var cmt = localStorage.getItem('user comments') ? JSON.parse(localStorage.getItem('user comments')) : []
+        var cmt_input = document.getElementById("user-cmt")
+        var flag = false
+        var output = ''
+        // console.log(cmt)
+        if(cmt.length > 0) {
+            cmt.forEach(i => {
+                // console.log(i.comment)
+                if(id === i.id){
+                    flag = true
+                    console.log(i)
+                    i.comment.forEach(post => {
+                        output += `
+                        <div class="user-cmt">
+                        <div class="cmt-img">
+                            <img src="../img/avatar_an_danh.jpg" alt="user">
+                        </div>
+                        <div class="user-cmt-content">
+                            <h1>User</h1>
+                            <p>${post}</p>
+                        </div>
+                    </div>
+                        `
+                    })
+                    document.getElementById("cmt-body").innerHTML = output
+                }
+                
+            })
+            if(flag){
+                document.getElementById("cmt-btn").onclick = (e) => {
+                    e.preventDefault()
+                        cmt.forEach(j => {
+                            if(id === j.id){
+                                j.comment.push(cmt_input.value)
+                                localStorage.setItem('user comments', JSON.stringify(cmt))
+                                output += `
+                        <div class="user-cmt">
+                        <div class="cmt-img">
+                            <img src="../img/avatar_an_danh.jpg" alt="user">
+                        </div>
+                        <div class="user-cmt-content">
+                            <h1>User</h1>
+                            <p>${cmt_input.value}</p>
+                        </div>
+                    </div>
+                        `
+                        document.getElementById("cmt-body").innerHTML = output
+                            }
+                        })
+                        clearinput()
+                        updateCmtNum()
+                }
+            }
+            else{
+                cmt.push({  
+                    id: id,
+                    comment: []
+                })
+                localStorage.setItem('user comments', JSON.stringify(cmt))
+                document.getElementById("cmt-btn").onclick = (e) => {
+                    e.preventDefault()
+                        cmt.forEach(j => {
+                            if(id === j.id){
+                                j.comment.push(cmt_input.value)
+                                localStorage.setItem('user comments', JSON.stringify(cmt))
+                                output += `
+                        <div class="user-cmt">
+                        <div class="cmt-img">
+                            <img src="../img/avatar_an_danh.jpg" alt="user">
+                        </div>
+                        <div class="user-cmt-content">
+                            <h1>@user</h1>
+                            <p>${cmt_input.value}</p>
+                        </div>
+                    </div>
+                        `
+                        document.getElementById("cmt-body").innerHTML = output
+                            }
+                        })
+                        clearinput()
+                        updateCmtNum()
+                }
+            }
+        }
+        else{
+            cmt.push({  
+                id: id,
+                comment: []
+            })
+            localStorage.setItem('user comments', JSON.stringify(cmt))
+            document.getElementById("cmt-btn").onclick = (e) => {
+                e.preventDefault()
+                    cmt.forEach(j => {
+                        if(id === j.id){
+                            j.comment.push(cmt_input.value)
+                            localStorage.setItem('user comments', JSON.stringify(cmt))
+                            output += `
+                    <div class="user-cmt">
+                    <div class="cmt-img">
+                        <img src="../img/avatar_an_danh.jpg" alt="user">
+                    </div>
+                    <div class="user-cmt-content">
+                        <h1>@user</h1>
+                        <p>${cmt_input.value}</p>
+                    </div>
+                </div>
+                    `
+                    document.getElementById("cmt-body").innerHTML = output
+                        }
+                    })
+                    clearinput()
+                    updateCmtNum()
+            }
+        }
+    
+        
+        
+    }
+
+
+
+
+    
+    
+
+
+
+function clearinput() {
+    document.getElementById("user-cmt").value = ''
+}
 
 
 

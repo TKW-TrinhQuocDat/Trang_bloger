@@ -774,6 +774,7 @@ div.contact > ul > li> a, div.contact > ul > li{
 
 .item-desc a h1{
     font-size: 3rem;
+    
 }
 
 .item img {
@@ -849,7 +850,23 @@ div.contact > ul > li> a, div.contact > ul > li{
         height: 400px;
 
     }
-    
+    .slider-dots {
+        bottom: 5px;
+    }
+    .slider-dots li{
+        width: 10px;
+    height: 10px;
+    }
+    .item-desc {
+        height: 25%;
+    }
+    .item-desc a h1{
+        font-size: 1.6rem;
+        overflow: hidden;
+    }
+    .item-desc p {
+        font-size: 1rem;
+    }
 
 }
 /* ===============Slider====================== */

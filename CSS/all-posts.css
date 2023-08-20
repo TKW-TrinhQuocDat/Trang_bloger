@@ -45,6 +45,7 @@ a {
     outline: none;
     border-radius: 4px;
     font-size: 2rem;
+    
 }
 
 .search-bar i {
@@ -275,7 +276,129 @@ a {
     font-weight: 600;
 }
 
+/* -----------------comment---------------------- */
+.cmt-container {
+    display: none;
+    position: fixed;
+    z-index: 300;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+
+.cmt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    margin:auto;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    background-color: var(--header-menu--);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.cmt-exit{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    /* background-color: var(--blue-color--); */
+}
+
+.cmt-exit i{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+.cmt-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:  20px 0;
+}
+
+.cmt-img {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.cmt-img img{
+    width: 100%;
+    background-color: var(--cmt-color--);
+    border-radius: 30px;
+}
+
+.cmt-input {
+    width: 85%;
+}
+
+.cmt-input input {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    border: none;
+    outline: none;
+    background-color: var(--header-menu--);
+    color: var(--text-color--);
+    box-sizing: border-box;
+}
+
+.cmt-input button{
+    display: block;
+    margin-left: auto;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: var(--text-color--);
+    background-color: var(--cmt-color--);
+    transition: .3s;
+}
+
+.cmt-input button:hover{
+    background-color: var(--blue-color--);
+    color: var(--text-color--);
+}
+
+.cmt-body {
+    display: flex;
+    flex-direction: column;
+}
+.user-cmt {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cmt-body::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 100, 100, 0.4);
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 15px;
+    
+}
+
+.user-cmt-content {
+    width: 80%;
+}
+
+.user-cmt-content p{
+    color: var(--text-color--);
+    font-size: 1.4rem;
+    overflow-wrap: break-word;
+}
 @media screen and (max-width: 850px){
     .post {
         flex-direction: column;
@@ -302,9 +425,10 @@ a {
     .search-bar{
         position: absolute;
         top:10px;
-        width: 90%;
+        width: 85%;
         margin: 20px 0;
     }
+    
     .posts {
         margin-top: 50px;
     }

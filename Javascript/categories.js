@@ -54,7 +54,7 @@ function categoriesPost() {
                     <a href="${post.link}"><img src="${post.img}" alt=""></a>
                     <div class="item-desc">
                         <p>${post.time}</p>
-                        <a href="${post.link}"><h1>${post.title}</h1></a>
+                        <a href="${post.link}" title="${post.title}"><h1>${post.title}</h1></a>
                     </div>
                 </div>
         
@@ -86,16 +86,7 @@ function categoriesPost() {
             document.getElementById("tags__container-row").innerHTML = popularTags
             document.getElementById("slider-list").innerHTML = sliderPost
 
-
-            
-            
-        })
-}
-
-categoriesPost()
-
-window.onload= () => {
-    var list = document.getElementById("slider-list")
+            var list = document.getElementById("slider-list")
             var items = document.querySelectorAll(".item")
             var prev = document.getElementById("prev")
             var next = document.getElementById("next")
@@ -139,7 +130,16 @@ window.onload= () => {
                     reloadSlider()
                 })
             })
-
+            
+            
+        })
 }
+
+categoriesPost()
+
+
+    
+
+
             
 
